@@ -91,7 +91,7 @@ async function downloadReports() {
     for (let i = 0; i < POSSM_shipkey.length; i++) {
       const shipkey = POSSM_shipkey[i];
       const config = {
-        url: `https://api2.vessellink.com/imo-dcs/ships/${shipkey}/export/daily-report/annual?isCalculateLfoToHfo=false&year=2023&isUk=true`,
+        url: process.env.LOGBOOK_API,
         method: 'GET',
         responseType: 'arraybuffer',
         headers: {
