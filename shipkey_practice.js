@@ -11,6 +11,7 @@ require("dotenv").config();
 const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuaWNrbmFtZSI6IjAzZjE2YzJkLTFkMzktNCIsIm5hbWUiOiJhZG1pbkBwb3NzbS5jby5rciIsInBpY3R1cmUiOiJodHRwczovL3MuZ3JhdmF0YXIuY29tL2F2YXRhci9jNDJjNGUyY2U0MDNiYWFhYTgyOTIwOGRlOWM0MDkwMj9zPTQ4MCZyPXBnJmQ9aHR0cHMlM0ElMkYlMkZjZG4uYXV0aDAuY29tJTJGYXZhdGFycyUyRmFkLnBuZyIsInVwZGF0ZWRfYXQiOiIyMDI0LTA1LTMwVDAxOjUxOjM0LjA0MloiLCJlbWFpbCI6ImFkbWluQHBvc3NtLmNvLmtyIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImlzcyI6Imh0dHBzOi8vbGFiMDIxLmF1dGgwLmNvbS8iLCJhdWQiOiJ5VW5oQzMxY2FqQkxId3RaZUxzOVgyaExDc01RUHRGViIsImlhdCI6MTcxNzAzMzg5NCwiZXhwIjoxNzE3MDY5ODk0LCJzdWIiOiJhdXRoMHw2MmNiZGZjYTZmNjAzYzc2ZTJmMWEwM2MifQ.I1vwMoNxLsQUDDuPT5_IFSSCNKRF92usViU98YLMxMY';
 const shipkey = []
 const shipname = {}
+const SHIP_COMPANY_COUNT = []
 
 
 async function fetchLocalJsonFile(filePath) {
@@ -21,13 +22,24 @@ async function fetchLocalJsonFile(filePath) {
 
 fetchLocalJsonFile('./ships_data.json')
     .then(data => {
-        console.log(Object.keys(data))
-        console.log(Object.keys(data)[0])
-        console.log(Object.length)
-        console.log(Object.keys(data).length)
+        // console.log(Object.keys(data))
+        // console.log(Object.keys(data)[0])
+        // console.log(Object.length)
+        // console.log(Object.keys(data).length)
+        // console.log(data[0])
+        SHIP_COMPANY_COUNT.push(Object.keys(data))
         shipkey.push(data)
+        console.log(shipkey[0].CIDO)
+        // Console.log(shipkey.CIDO)
+        // console.log(shipkey.Object.keys(data))
+      for(i=0; i<Object.keys(data).length; i++){
+        for(k=0; k<Object.keys(data)[i].length; k++){
+            // console.log(Object.keys(data)[CIDO])
 
-        console.log(shipkey[0].CIDO[0].SHIPNAME, shipkey[0].CIDO[0].SHIPKEY)
+        }
+      }
+        // console.log(shipkey[0].CIDO[0].SHIPNAME, shipkey[0].CIDO[0].SHIPKEY)
+        console.log(SHIP_COMPANY_COUNT)
     })
     .catch(error => {
         console.error('Error:', error);
