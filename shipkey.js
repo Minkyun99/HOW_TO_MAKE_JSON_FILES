@@ -95,10 +95,9 @@ app.post("/send_all_ships", async(req, res)=>{
 app.post("/download_dailyreport", async (req, res) => {
     const year = req.body.year;
     const shipkey = req.body.shipkey;
-    const token = req.body.token
     console.log(year, shipkey);
-    token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuaWNrbmFtZSI6IjAzZjE2YzJkLTFkMzktNCIsIm5hbWUiOiJhZG1pbkBwb3NzbS5jby5rciIsInBpY3R1cmUiOiJodHRwczovL3MuZ3JhdmF0YXIuY29tL2F2YXRhci9jNDJjNGUyY2U0MDNiYWFhYTgyOTIwOGRlOWM0MDkwMj9zPTQ4MCZyPXBnJmQ9aHR0cHMlM0ElMkYlMkZjZG4uYXV0aDAuY29tJTJGYXZhdGFycyUyRmFkLnBuZyIsInVwZGF0ZWRfYXQiOiIyMDI0LTA1LTMwVDAxOjUxOjM0LjA0MloiLCJlbWFpbCI6ImFkbWluQHBvc3NtLmNvLmtyIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImlzcyI6Imh0dHBzOi8vbGFiMDIxLmF1dGgwLmNvbS8iLCJhdWQiOiJ5VW5oQzMxY2FqQkxId3RaZUxzOVgyaExDc01RUHRGViIsImlhdCI6MTcxNzAzMzg5NCwiZXhwIjoxNzE3MDY5ODk0LCJzdWIiOiJhdXRoMHw2MmNiZGZjYTZmNjAzYzc2ZTJmMWEwM2MifQ.I1vwMoNxLsQUDDuPT5_IFSSCNKRF92usViU98YLMxMY';
-    const url = process.env.dailyreport_api_1 + shipkey + process.env.dailyreport_api_2;
+    const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuaWNrbmFtZSI6ImU1MTIzMGJmLTEzMzMtNCIsIm5hbWUiOiJzdHhAdmVzc2VsbGluay5jb20iLCJwaWN0dXJlIjoiaHR0cHM6Ly9zLmdyYXZhdGFyLmNvbS9hdmF0YXIvM2IwZmE5MzA1YzFiMTgyNjBkMWJjZjE0MGI4YWVlYTM_cz00ODAmcj1wZyZkPWh0dHBzJTNBJTJGJTJGY2RuLmF1dGgwLmNvbSUyRmF2YXRhcnMlMkZzdC5wbmciLCJ1cGRhdGVkX2F0IjoiMjAyNC0wNi0wNVQwODo1NjoxMy4xNzdaIiwiZW1haWwiOiJzdHhAdmVzc2VsbGluay5jb20iLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImlzcyI6Imh0dHBzOi8vbGFiMDIxLmF1dGgwLmNvbS8iLCJhdWQiOiJ5VW5oQzMxY2FqQkxId3RaZUxzOVgyaExDc01RUHRGViIsImlhdCI6MTcxNzU3Nzc3MywiZXhwIjoxNzE3NjEzNzczLCJzdWIiOiJhdXRoMHw2MjU2Mzk1ZTk5YWI0MDAwNjlkMWQ5N2UifQ.U6BW_h0BNHX60pcQ_K6czAE203xIPDTTyQuHkLAx53k';
+    const url = process.env.dailyreport_api_1 + shipkey + process.env.dailyreport_api_2 + year + process.env.dailyreport_api_3;
 
     res.status(200).send({ url: url, year: year, token: token });
 });
