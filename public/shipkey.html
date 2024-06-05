@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="./shipkey.css">
+</head>
+<body>
+    <div class="container" id="container">
+        <input type="text" id="shipname" value="" onkeypress="handleKeyPress(event)">
+        <button class="shipname_send" onclick="shipname_click()" >전송</button>
+    </div>
+    <table id="company_table">        
+    </table>
+
+
+    <script>
+       async function shipname_click() {
+    const shipname_value = document.getElementById('shipname').value.toUpperCase();
+    console.log("Sending shipname:", shipname_value);
+    try {
+        const response = await axios.post("/send_shipname", {
+            shipname: shipname_value
+        });
+        const shipname = response.data.SHIPNAME;
+        const shipkey = response.data.SHIPKEY;
+        console.log(shipname, shipkey)
+
+        if (!shipname || !shipkey) {
+            console.log("Ship not found");
+            alert('해당 선박의 데이터를 찾을 수 없습니다.');
+        } else {
+            // 선박 데이터를 표시하는 코드
+            const company_table = document.getElementById('company_table');
+            const shipkey_tr = document.createElement('tr');
+            const shipkey_td = document.createElement('td');
+            const shipname_td = document.createElement('td');
+
+            shipname_td.innerHTML = shipname;
+            shipkey_td.innerHTML = shipkey;
+
+            company_table.appendChild(shipkey_tr);
+            shipkey_tr.appendChild(shipname_td);
+            shipkey_tr.appendChild(shipkey_td);
+
+            console.log("Found ship:", response.data);
+        }
+    } catch (error) {
+        console.error('Error:', error);
+    }
+}
+
+function handleKeyPress(event) {
+    if (event.key === "Enter") {
+        shipname_click();
+    }
+}
+        document.addEventListener('DOMContentLoaded', () => {
+            const container = document.getElementById('container');
+            const company_select = document.createElement('select');
+            company_select.id = 'company_select'; 
+
+            const ship_company = ['ALL','CIDO', 'POLARIS', 'POSSM', 'FMLK', 'STX', 'DORIKO', 'TAIKOON', 'KSS', 'HANARO', 'KSM', 'WILHELMSEN', 'SNGLOBAL', 'MEGALINE', 'KORINSTAR', 'FAIR', 'SHINSUNG', 'BEOMJOO', 'JOONGANG', 'SINOKOR', 'LEESHIPPING', 'HANGANG', 'SEONGHO', 'PANBULK', 'WOCEAN', 'GFSM'];
+
+            container.appendChild(company_select);
+
+            //select 하위 option 생성
+            for (let i = 0; i < ship_company.length; i++) {
+                const company_options = document.createElement('option');
+                company_options.innerHTML = ship_company[i];
+                company_options.value = ship_company[i];
+                company_select.appendChild(company_options);
+            }
+
+            ship_select(); // ship_select 함수 호출
+        });
+
+        function ship_select() {
+    const ship_company_select_event = document.getElementById('company_select');
+
+    ship_company_select_event.addEventListener('change', (e) => {
+        const ship_company_value = e.target.value;
+
+        //테이블 내용 초기화
+        const company_table = document.getElementById('company_table');
+        company_table.innerHTML = '';
+
+        if (ship_company_value === 'ALL') {
+            axios.post('/send_all_ships')
+                .then((res) => {
+                    const ships = res.data; // res.data를 ships 변수에 저장
+                    console.log(ships); // 서버에서 받은 데이터를 출력
+
+                    
+                    for (let company in ships) {
+    let isFirstRow = true; // 첫 번째 행인지 여부를 확인하기 위한 플래그
+    for (let i = 0; i < ships[company].length; i++) {
+        const shipkey_tr = document.createElement('tr');
+        const shipkey_td = document.createElement('td');
+        const shipname_td = document.createElement('td');
+        const companyname = document.createElement('td');
+        const dailyreport_download_button_2023 =document.createElement('button')
+        dailyreport_download_button_2023.id = 'dailyreport_button'
+        dailyreport_download_button_2023.addEventListener('click', () => {
+    dailyreport_click(2023,token);
+});
+        const dailyreport_download_button_2024 =document.createElement('button')
+        dailyreport_download_button_2024.id = 'dailyreport_button'
+        dailyreport_download_button_2024.addEventListener('click', () => {
+    dailyreport_click(2024,token);
+});
+
+        if (isFirstRow) {
+            companyname.rowSpan = ships[company].length; // 첫 번째 행에만 회사 이름 설정
+            companyname.innerHTML = company; // 첫 번째 행에 회사 이름 추가
+            shipkey_tr.appendChild(companyname); // 회사 이름을 행에 추가
+            company_table.appendChild(shipkey_tr); // 행을 테이블에 추가
+            isFirstRow = false; // isFirstRow를 false로 설정하여 다음 반복에서는 회사 이름을 설정하지 않음
+        }
+
+        shipname_td.innerHTML = ships[company][i].SHIPNAME;
+        shipkey_td.innerHTML = ships[company][i].SHIPKEY;
+        dailyreport_download_button_2023.innerHTML = `daily_2023`
+        dailyreport_download_button_2023.value = ships[company][i].SHIPKEY
+        dailyreport_download_button_2024.innerHTML = `daily_2024`
+        dailyreport_download_button_2024.value = ships[company][i].SHIPKEY
+        
+        shipkey_tr.appendChild(shipname_td);
+        shipkey_tr.appendChild(shipkey_td);
+        shipname_td.appendChild(dailyreport_download_button_2023)
+        shipname_td.appendChild(dailyreport_download_button_2024)
+
+        company_table.appendChild(shipkey_tr); // 각 선박 행을 테이블에 추가
+    }
+}
+
+                })
+                .catch((error) => {
+                    console.error('Error:', error);
+                });
+        } else {
+            axios.post('/send_company_name', {
+                    company: ship_company_value
+                })
+                .then((res) => {
+                    const ships = res.data; // res.data를 ships 변수에 저장
+                    console.log(ships); // 서버에서 받은 데이터를 출력
+
+                    // 리스트 아이템 추가
+                    for (let i = 0; i < ships.length; i++) {
+                        const shipkey_tr = document.createElement('tr')
+                        const shipkey_td = document.createElement('td');
+                        const shipname_td = document.createElement('td');
+
+                        shipkey_td.innerHTML = ships[i].SHIPNAME;
+                        shipname_td.innerHTML = ships[i].SHIPKEY;
+
+                        company_table.appendChild(shipkey_tr)
+                        shipkey_tr.appendChild(shipkey_td);
+                        shipkey_tr.appendChild(shipname_td);
+                    }
+                })
+                .catch((error) => {
+                    console.error('Error:', error);
+                });
+        }
+    });
+}
+
+function dailyreport_click(year, token) {
+    // API를 통해 파일 다운로드 요청
+    axios.post('/download_dailyreport', { 
+        year: year,
+        shipkey: event.target.value,
+        token: ''
+    })
+    .then((response) => {
+        const data = response.data; // 응답 데이터
+        const url = data.url; // 파일 다운로드 URL
+        console.log(url)
+        const fileName = `dailyreport_${data.year}.xlsx`; // 파일명
+        // 파일 다운로드 처리
+        const link = document.createElement('a');
+        link.href = url;
+        link.setAttribute('download', fileName);
+        document.body.appendChild(link);
+        link.click();
+    })
+    .catch((error) => {
+        console.error('Error downloading daily report:', error);
+    });
+}
+    </script>
+</body>
+</html>
