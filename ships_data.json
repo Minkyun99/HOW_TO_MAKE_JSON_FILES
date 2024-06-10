@@ -1147,6 +1147,20 @@
       "SHIPKEY": "D5225"
     }
   ],
+  "NJSM": [
+    {
+      "SHIPNAME": "JN CAMELLIA",
+      "SHIPKEY": "D7BB"
+    },
+    {
+      "SHIPNAME": "JN IRIS",
+      "SHIPKEY": "D7BX"
+    },
+    {
+      "SHIPNAME": "JN NEPTUNE",
+      "SHIPKEY": "D7VY"
+    }
+  ],
   "MEGALINE": [
     {
       "SHIPNAME": "MEGA TRUST",
@@ -1387,6 +1401,352 @@
     {
       "SHIPNAME": "BANGKOK CHEMI",
       "SHIPKEY": "V7A5809"
+    }
+  ],
+  "PIL": [
+    {
+      "SHIPNAME": "KOTA AZAM",
+      "SHIPKEY": "S6BL"
+    },
+    {
+      "SHIPNAME": "KOTA CABAR",
+      "SHIPKEY": "9V6247"
+    },
+    {
+      "SHIPNAME": "KOTA CAHAYA",
+      "SHIPKEY": "9V7831"
+    },
+    {
+      "SHIPNAME": "KOTA CANTIK",
+      "SHIPKEY": "9V7835"
+    },
+    {
+      "SHIPNAME": "KOTA CARUM",
+      "SHIPKEY": "9V7838"
+    },
+    {
+      "SHIPNAME": "KOTA CEMPAKA",
+      "SHIPKEY": "9VLP3"
+    },
+    {
+      "SHIPNAME": "KOTA CEPAT",
+      "SHIPKEY": "9VLP8"
+    },
+    {
+      "SHIPNAME": "KOTA DAHLIA",
+      "SHIPKEY": "9VED9"
+    },
+    {
+      "SHIPNAME": "KOTA DUNIA",
+      "SHIPKEY": "9V7847"
+    },
+    {
+      "SHIPNAME": "KOTA DUTA",
+      "SHIPKEY": "9V8167"
+    },
+    {
+      "SHIPNAME": "KOTA GABUNG",
+      "SHIPKEY": "9V7465"
+    },
+    {
+      "SHIPNAME": "KOTA GADANG",
+      "SHIPKEY": "9V7643"
+    },
+    {
+      "SHIPNAME": "KOTA GANDING",
+      "SHIPKEY": "9V7660"
+    },
+    {
+      "SHIPNAME": "KOTA GAYA",
+      "SHIPKEY": "9V7466"
+    },
+    {
+      "SHIPNAME": "KOTA HAKIM",
+      "SHIPKEY": "9V8257"
+    },
+    {
+      "SHIPNAME": "KOTA HALUS",
+      "SHIPKEY": "9V8258"
+    },
+    {
+      "SHIPNAME": "KOTA HANDAL",
+      "SHIPKEY": "9V7329"
+    },
+    {
+      "SHIPNAME": "KOTA HAPAS",
+      "SHIPKEY": "9V8259"
+    },
+    {
+      "SHIPNAME": "KOTA HARUM",
+      "SHIPKEY": "9VFF8"
+    },
+    {
+      "SHIPNAME": "KOTA HENING",
+      "SHIPKEY": "9V7332"
+    },
+    {
+      "SHIPNAME": "KOTA HIDAYAH",
+      "SHIPKEY": "9VAL4"
+    },
+    {
+      "SHIPNAME": "KOTA JAYA",
+      "SHIPKEY": "9V7333"
+    },
+    {
+      "SHIPNAME": "KOTA JOHAN",
+      "SHIPKEY": "VRQR6"
+    },
+    {
+      "SHIPNAME": "KOTA KAMIL",
+      "SHIPKEY": "9VJK6"
+    },
+    {
+      "SHIPNAME": "KOTA KARIM",
+      "SHIPKEY": "9V7839"
+    },
+    {
+      "SHIPNAME": "KOTA KAYA",
+      "SHIPKEY": "3ENH5"
+    },
+    {
+      "SHIPNAME": "KOTA LAGU",
+      "SHIPKEY": "9V7258"
+    },
+    {
+      "SHIPNAME": "KOTA LAMBAI",
+      "SHIPKEY": "9VFX5"
+    },
+    {
+      "SHIPNAME": "KOTA LAMBANG",
+      "SHIPKEY": "9VFX9"
+    },
+    {
+      "SHIPNAME": "KOTA LARIS",
+      "SHIPKEY": "9V7259"
+    },
+    {
+      "SHIPNAME": "KOTA LAWA",
+      "SHIPKEY": "9V7472"
+    },
+    {
+      "SHIPNAME": "KOTA LAYANG",
+      "SHIPKEY": "9V7337"
+    },
+    {
+      "SHIPNAME": "KOTA LEGIT",
+      "SHIPKEY": "9V8481"
+    },
+    {
+      "SHIPNAME": "KOTA LEKAS",
+      "SHIPKEY": "9V8480"
+    },
+    {
+      "SHIPNAME": "KOTA LEMBAH",
+      "SHIPKEY": "9V7665"
+    },
+    {
+      "SHIPNAME": "KOTA LESTARI",
+      "SHIPKEY": "9V2116"
+    },
+    {
+      "SHIPNAME": "KOTA LIMA",
+      "SHIPKEY": "D5JI9"
+    },
+    {
+      "SHIPNAME": "KOTA LOCENG",
+      "SHIPKEY": "9V7667"
+    },
+    {
+      "SHIPNAME": "KOTA LUKIS",
+      "SHIPKEY": "VRSN8"
+    },
+    {
+      "SHIPNAME": "KOTA LUMAYAN",
+      "SHIPKEY": "VRSO2"
+    },
+    {
+      "SHIPNAME": "KOTA LUMBA",
+      "SHIPKEY": "VRSO3"
+    },
+    {
+      "SHIPNAME": "KOTA MACHAN",
+      "SHIPKEY": "9V9976"
+    },
+    {
+      "SHIPNAME": "KOTA MAKMUR",
+      "SHIPKEY": "VRRC2"
+    },
+    {
+      "SHIPNAME": "KOTA MANIS",
+      "SHIPKEY": "9V9975"
+    },
+    {
+      "SHIPNAME": "KOTA MEGAH",
+      "SHIPKEY": "9V9978"
+    },
+    {
+      "SHIPNAME": "KOTA NABIL",
+      "SHIPKEY": "9VFX3"
+    },
+    {
+      "SHIPNAME": "KOTA NAGA",
+      "SHIPKEY": "9VFX4"
+    },
+    {
+      "SHIPNAME": "KOTA NALURI",
+      "SHIPKEY": "9VHP2"
+    },
+    {
+      "SHIPNAME": "KOTA NANHAI",
+      "SHIPKEY": "9VHM9"
+    },
+    {
+      "SHIPNAME": "KOTA NASRAT",
+      "SHIPKEY": "9V7346"
+    },
+    {
+      "SHIPNAME": "KOTA NAZAR",
+      "SHIPKEY": "9V8600"
+    },
+    {
+      "SHIPNAME": "KOTA NAZIM",
+      "SHIPKEY": "9VEY4"
+    },
+    {
+      "SHIPNAME": "KOTA NEBULA",
+      "SHIPKEY": "9V6396"
+    },
+    {
+      "SHIPNAME": "KOTA NEKAD",
+      "SHIPKEY": "H3HS"
+    },
+    {
+      "SHIPNAME": "KOTA NILAM",
+      "SHIPKEY": "3EZQ8"
+    },
+    {
+      "SHIPNAME": "KOTA NIPAH",
+      "SHIPKEY": "9V9332"
+    },
+    {
+      "SHIPNAME": "KOTA PAHLAWAN",
+      "SHIPKEY": "9V5293"
+    },
+    {
+      "SHIPNAME": "KOTA PURI",
+      "SHIPKEY": "VRSB5"
+    },
+    {
+      "SHIPNAME": "KOTA PUSAKA",
+      "SHIPKEY": "VRSB2"
+    },
+    {
+      "SHIPNAME": "KOTA RAHMAT",
+      "SHIPKEY": "9VEY2"
+    },
+    {
+      "SHIPNAME": "KOTA RAJA",
+      "SHIPKEY": "S6SS"
+    },
+    {
+      "SHIPNAME": "KOTA RAJIN",
+      "SHIPKEY": "S6BH6"
+    },
+    {
+      "SHIPNAME": "KOTA RAKAN",
+      "SHIPKEY": "9V7348"
+    },
+    {
+      "SHIPNAME": "KOTA RAKYAT",
+      "SHIPKEY": "9VJK5"
+    },
+    {
+      "SHIPNAME": "KOTA RANCAK",
+      "SHIPKEY": "S6BH8"
+    },
+    {
+      "SHIPNAME": "KOTA RATNA",
+      "SHIPKEY": "S6TI"
+    },
+    {
+      "SHIPNAME": "KOTA RATU",
+      "SHIPKEY": "S6ST"
+    },
+    {
+      "SHIPNAME": "KOTA RESTU",
+      "SHIPKEY": "9V8166"
+    },
+    {
+      "SHIPNAME": "KOTA RIA",
+      "SHIPKEY": "9VJK4"
+    },
+    {
+      "SHIPNAME": "KOTA RUKUN",
+      "SHIPKEY": "S6TJ"
+    },
+    {
+      "SHIPNAME": "KOTA SAHABAT",
+      "SHIPKEY": "9V2122"
+    },
+    {
+      "SHIPNAME": "KOTA SALAM",
+      "SHIPKEY": "9V2123"
+    },
+    {
+      "SHIPNAME": "KOTA SANTOS",
+      "SHIPKEY": "D5WO7"
+    },
+    {
+      "SHIPNAME": "KOTA SATRIA",
+      "SHIPKEY": "9V2124"
+    },
+    {
+      "SHIPNAME": "KOTA SEGAR",
+      "SHIPKEY": "9V2125"
+    },
+    {
+      "SHIPNAME": "KOTA SEJARAH",
+      "SHIPKEY": "9V2126"
+    },
+    {
+      "SHIPNAME": "KOTA SEJATI",
+      "SHIPKEY": "9V2127"
+    },
+    {
+      "SHIPNAME": "KOTA SELAMAT",
+      "SHIPKEY": "9V2128"
+    },
+    {
+      "SHIPNAME": "KOTA SEMPENA",
+      "SHIPKEY": "9V2129"
+    },
+    {
+      "SHIPNAME": "KOTA SETIA",
+      "SHIPKEY": "9V2130"
+    },
+    {
+      "SHIPNAME": "KOTA SINGA",
+      "SHIPKEY": "9V2131"
+    },
+    {
+      "SHIPNAME": "KOTA SURIA",
+      "SHIPKEY": "9V2132"
+    },
+    {
+      "SHIPNAME": "KOTA TEMA",
+      "SHIPKEY": "9V9309"
+    },
+    {
+      "SHIPNAME": "KOTA TENAGA",
+      "SHIPKEY": "S6AL7"
+    },
+    {
+      "SHIPNAME": "SALAM MAJU",
+      "SHIPKEY": "9M2383"
+    },
+    {
+      "SHIPNAME": "SELATAN DAMAI",
+      "SHIPKEY": "YBQR2"
     }
   ]
 }

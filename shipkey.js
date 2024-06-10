@@ -3,20 +3,24 @@ const path = require("path");
 const logger = require("morgan");
 const app = express();
 const fs = require('fs').promises;
+const cors = require('cors');
+const cookieParser = require('cookie-parser');
+
 require("dotenv").config();
 
 const port = 8080;
 
-// 로깅을 위한 morgan 설정
+
 app.use(logger("tiny"));
-
-// JSON 요청 본문을 파싱하기 위한 미들웨어 설정
 app.use(express.json());
-
-// 정적 파일을 "public" 디렉터리에서 제공하도록 설정
+app.use(cors({
+    origin: 'http://localhost:8080',
+    credentials: true,
+    allowedHeaders: ['Authorization', 'Content-Type']
+}));
+app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 
-// HTML 파일을 제공하기 위한 경로 설정
 app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, "public", "shipkey.html"));
 });
@@ -79,6 +83,11 @@ app.post("/send_company_name", async (req, res) => {
     }
 });
 
+app.post('/get-token', async(req,res)=>{
+    const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuaWNrbmFtZSI6InNlcnZpY2UiLCJuYW1lIjoic2VydmljZUBsYWIwMjEuY28ua3IiLCJwaWN0dXJlIjoiaHR0cHM6Ly9zLmdyYXZhdGFyLmNvbS9hdmF0YXIvMTYyNmEzYmE4NDMxMmE0NDdjMzFlNGJmYTk5ZTA3NDc_cz00ODAmcj1wZyZkPWh0dHBzJTNBJTJGJTJGY2RuLmF1dGgwLmNvbSUyRmF2YXRhcnMlMkZzZS5wbmciLCJ1cGRhdGVkX2F0IjoiMjAyNC0wNi0xMFQwMjo1Nzo1OC44MzlaIiwiZW1haWwiOiJzZXJ2aWNlQGxhYjAyMS5jby5rciIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJpc3MiOiJodHRwczovL2xhYjAyMS5hdXRoMC5jb20vIiwiYXVkIjoieVVuaEMzMWNhakJMSHd0WmVMczlYMmhMQ3NNUVB0RlYiLCJpYXQiOjE3MTc5ODgyNzksImV4cCI6MTcxODAyNDI3OSwic3ViIjoiYXV0aDB8NTlhY2ZlMzYyZWY1NjI1YzYzNjFjYjdkIn0.9qpua9EZhzJxBcm1p7LFtypLMDzCxBEwbozIAz8Z_dU';
+    res.status(200).send({token: token });
+})
+
 app.post("/send_all_ships", async(req, res)=>{
     try {
         const data = await fetchLocalJsonFile('./ships_data.json')
@@ -91,16 +100,24 @@ app.post("/send_all_ships", async(req, res)=>{
 })
 
 
-
 app.post("/download_dailyreport", async (req, res) => {
     const year = req.body.year;
     const shipkey = req.body.shipkey;
     console.log(year, shipkey);
-    const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuaWNrbmFtZSI6ImU1MTIzMGJmLTEzMzMtNCIsIm5hbWUiOiJzdHhAdmVzc2VsbGluay5jb20iLCJwaWN0dXJlIjoiaHR0cHM6Ly9zLmdyYXZhdGFyLmNvbS9hdmF0YXIvM2IwZmE5MzA1YzFiMTgyNjBkMWJjZjE0MGI4YWVlYTM_cz00ODAmcj1wZyZkPWh0dHBzJTNBJTJGJTJGY2RuLmF1dGgwLmNvbSUyRmF2YXRhcnMlMkZzdC5wbmciLCJ1cGRhdGVkX2F0IjoiMjAyNC0wNi0wNVQwODo1NjoxMy4xNzdaIiwiZW1haWwiOiJzdHhAdmVzc2VsbGluay5jb20iLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImlzcyI6Imh0dHBzOi8vbGFiMDIxLmF1dGgwLmNvbS8iLCJhdWQiOiJ5VW5oQzMxY2FqQkxId3RaZUxzOVgyaExDc01RUHRGViIsImlhdCI6MTcxNzU3Nzc3MywiZXhwIjoxNzE3NjEzNzczLCJzdWIiOiJhdXRoMHw2MjU2Mzk1ZTk5YWI0MDAwNjlkMWQ5N2UifQ.U6BW_h0BNHX60pcQ_K6czAE203xIPDTTyQuHkLAx53k';
+    // const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuaWNrbmFtZSI6InNlcnZpY2UiLCJuYW1lIjoic2VydmljZUBsYWIwMjEuY28ua3IiLCJwaWN0dXJlIjoiaHR0cHM6Ly9zLmdyYXZhdGFyLmNvbS9hdmF0YXIvMTYyNmEzYmE4NDMxMmE0NDdjMzFlNGJmYTk5ZTA3NDc_cz00ODAmcj1wZyZkPWh0dHBzJTNBJTJGJTJGY2RuLmF1dGgwLmNvbSUyRmF2YXRhcnMlMkZzZS5wbmciLCJ1cGRhdGVkX2F0IjoiMjAyNC0wNi0xMFQwMjo1Nzo1OC44MzlaIiwiZW1haWwiOiJzZXJ2aWNlQGxhYjAyMS5jby5rciIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJpc3MiOiJodHRwczovL2xhYjAyMS5hdXRoMC5jb20vIiwiYXVkIjoieVVuaEMzMWNhakJMSHd0WmVMczlYMmhMQ3NNUVB0RlYiLCJpYXQiOjE3MTc5ODgyNzksImV4cCI6MTcxODAyNDI3OSwic3ViIjoiYXV0aDB8NTlhY2ZlMzYyZWY1NjI1YzYzNjFjYjdkIn0.9qpua9EZhzJxBcm1p7LFtypLMDzCxBEwbozIAz8Z_dU';
     const url = process.env.dailyreport_api_1 + shipkey + process.env.dailyreport_api_2 + year + process.env.dailyreport_api_3;
 
-    res.status(200).send({ url: url, year: year, token: token });
+    res.status(200).send({ url: url, year: year});
 });
+
+app.post("/bdn_download", async(req,res)=>{
+    const year = req.body.year;
+    const shipkey = req.body.shipkey
+    const bdn_url = process.env.bdn_api
+    console.log(shipkey)
+
+    res.status(200).send({year : year, shipkey: shipkey, url : bdn_url})
+})
 
 
 app.listen(port, () => {

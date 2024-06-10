@@ -11,6 +11,7 @@
     <div class="container" id="container">
         <input type="text" id="shipname" value="" onkeypress="handleKeyPress(event)">
         <button class="shipname_send" onclick="shipname_click()" >전송</button>
+        <button id="cookie" onclick="fetchAndSaveToken()">cookie</button>
     </div>
     <table id="company_table">        
     </table>
@@ -62,7 +63,7 @@ function handleKeyPress(event) {
             const company_select = document.createElement('select');
             company_select.id = 'company_select'; 
 
-            const ship_company = ['ALL','CIDO', 'POLARIS', 'POSSM', 'FMLK', 'STX', 'DORIKO', 'TAIKOON', 'KSS', 'HANARO', 'KSM', 'WILHELMSEN', 'SNGLOBAL', 'MEGALINE', 'KORINSTAR', 'FAIR', 'SHINSUNG', 'BEOMJOO', 'JOONGANG', 'SINOKOR', 'LEESHIPPING', 'HANGANG', 'SEONGHO', 'PANBULK', 'WOCEAN', 'GFSM'];
+            const ship_company = ['ALL','CIDO', 'POLARIS', 'POSSM', 'FMLK', 'STX', 'DORIKO', 'TAIKOON', 'KSS', 'HANARO', 'KSM', 'WILHELMSEN', 'SNGLOBAL', 'MEGALINE', 'KORINSTAR', 'FAIR', 'SHINSUNG', 'BEOMJOO', 'JOONGANG', 'SINOKOR', 'LEESHIPPING', 'HANGANG', 'SEONGHO', 'PANBULK', 'WOCEAN', 'GFSM', 'PIL'];
 
             container.appendChild(company_select);
 
@@ -111,6 +112,16 @@ function handleKeyPress(event) {
         dailyreport_download_button_2024.addEventListener('click', () => {
     dailyreport_click(2024);
 });
+        const bdn_download_button_2023 = document.createElement('button')
+        bdn_download_button_2023.id = 'bdn_button_2023'
+        bdn_download_button_2023.addEventListener('click', ()=>{
+            bdn_download(2023)
+        })
+        const bdn_download_button_2024 = document.createElement('button')
+        bdn_download_button_2024.id = 'bdn_button_2024'
+        bdn_download_button_2024.addEventListener('click', ()=>{
+            bdn_download(2024)
+        })
 
         if (isFirstRow) {
             companyname.rowSpan = ships[company].length; // 첫 번째 행에만 회사 이름 설정
@@ -126,11 +137,18 @@ function handleKeyPress(event) {
         dailyreport_download_button_2023.value = ships[company][i].SHIPKEY
         dailyreport_download_button_2024.innerHTML = `daily_2024`
         dailyreport_download_button_2024.value = ships[company][i].SHIPKEY
+
+        bdn_download_button_2023.value = ships[company][i].SHIPKEY
+        bdn_download_button_2023.innerHTML = `bdn_2023`
+        bdn_download_button_2024.value = ships[company][i].SHIPKEY
+        bdn_download_button_2024.innerHTML = `bdn_2024`
         
         shipkey_tr.appendChild(shipname_td);
         shipkey_tr.appendChild(shipkey_td);
-        shipname_td.appendChild(dailyreport_download_button_2023)
-        shipname_td.appendChild(dailyreport_download_button_2024)
+        // shipname_td.appendChild(dailyreport_download_button_2023)
+        // shipname_td.appendChild(dailyreport_download_button_2024)
+        shipname_td.appendChild(bdn_download_button_2023)
+        shipname_td.appendChild(bdn_download_button_2024)
 
         company_table.appendChild(shipkey_tr); // 각 선박 행을 테이블에 추가
     }
@@ -169,33 +187,93 @@ function handleKeyPress(event) {
     });
 }
 
-function dailyreport_click(year) {
-    // API를 통해 파일 다운로드 요청
-    axios.post('/download_dailyreport', { 
-        year: year,
-        shipkey: event.target.value
-    })
-    .then((response) => {
-        const data = response.data; // 응답 데이터
-        const url = data.url; // 파일 다운로드 URL
-        const token = data.token; // 받아온 토큰 값
+async function fetchAndSaveToken() {
+            try {
+                const response = await axios.post('/get-token'); // 토큰을 가져오는 API가 필요합니다.
+                const token = response.data.token;
+                document.cookie = `authToken=${token}; path=/;`;
+                console.log('Token saved in cookie:', token);
+            } catch (error) {
+                console.error('Error fetching token:', error);
+            }
+        }
+
+        const axiosInstance = axios.create({
+    withCredentials: true,
+    headers: {
+        'Content-Type': 'application/json'
+    }
+});
+
+async function dailyreport_click(year) {
+    try {
+        const token = getCookie('authToken');
+        if (!token) {
+            throw new Error('No auth token found in cookies');
+        }
+
+        const response = await axios.post('/download_dailyreport', {
+            year: year,
+            shipkey: event.target.value // 여기에 실제 shipkey를 넣으세요.
+        }, {
+            headers: {
+                Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuaWNrbmFtZSI6InNlcnZpY2UiLCJuYW1lIjoic2VydmljZUBsYWIwMjEuY28ua3IiLCJwaWN0dXJlIjoiaHR0cHM6Ly9zLmdyYXZhdGFyLmNvbS9hdmF0YXIvMTYyNmEzYmE4NDMxMmE0NDdjMzFlNGJmYTk5ZTA3NDc_cz00ODAmcj1wZyZkPWh0dHBzJTNBJTJGJTJGY2RuLmF1dGgwLmNvbSUyRmF2YXRhcnMlMkZzZS5wbmciLCJ1cGRhdGVkX2F0IjoiMjAyNC0wNi0xMFQwMjo1Nzo1OC44MzlaIiwiZW1haWwiOiJzZXJ2aWNlQGxhYjAyMS5jby5rciIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJpc3MiOiJodHRwczovL2xhYjAyMS5hdXRoMC5jb20vIiwiYXVkIjoieVVuaEMzMWNhakJMSHd0WmVMczlYMmhMQ3NNUVB0RlYiLCJpYXQiOjE3MTc5ODgyNzksImV4cCI6MTcxODAyNDI3OSwic3ViIjoiYXV0aDB8NTlhY2ZlMzYyZWY1NjI1YzYzNjFjYjdkIn0.9qpua9EZhzJxBcm1p7LFtypLMDzCxBEwbozIAz8Z_dU`
+            },
+            withCredentials: true
+        });
+
+        const data = response.data;
+        const url = data.url;
+        const fileName = `dailyreport_${data.year}.xlsx`;
 
         console.log(url, token);
 
-        const fileName = `dailyreport_${data.year}.xlsx`; // 파일명
-        // 파일 다운로드 처리
         const link = document.createElement('a');
-link.href = url;
-link.setAttribute('download', fileName);
-link.style.display = 'none'; // 안보이도록 설정
-document.body.appendChild(link);
-link.click();
-document.body.removeChild(link); // 다운로드 후 링크 제거
-    })
-    .catch((error) => {
+        link.href = url;
+        link.setAttribute('download', fileName);
+        link.style.display = 'none';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+
+    } catch (error) {
         console.error('Error downloading daily report:', error);
-    });
+    }
 }
+       
+        function getCookie(name) {
+            const value = `; ${document.cookie}`;
+            const parts = value.split(`; ${name}=`);
+            if (parts.length === 2) return parts.pop().split(';').shift();
+        }
+
+
+        async function bdn_download (year) {
+            try{
+                axios.post('/bdn_download', {
+                    year : year,
+                    shipkey : event.target.value
+                }).then((res)=>{
+                    const data = res.data
+            const shipkey = data.shipkey
+            console.log(shipkey)
+            const url = data.url + shipkey+ '/' + year;
+            const fileName = `bdn_${data.year}.zip`;
+
+            console.log(url);
+
+            const link = document.createElement('a');
+            link.href = url;
+            link.setAttribute('download', fileName);
+            link.style.display = 'none';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+                })
+            } catch{
+
+            }
+        }
     </script>
 </body>
 </html>

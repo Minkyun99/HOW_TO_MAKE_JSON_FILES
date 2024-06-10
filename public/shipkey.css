@@ -66,3 +66,13 @@ select option {
     border: none;
     border-radius: 4px;
 }
+
+#bdn_button_2023, #bdn_button_2024  {
+    padding: 6px 12px;
+    margin-left: 10px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
