@@ -119,6 +119,27 @@ app.post("/bdn_download", async(req,res)=>{
     res.status(200).send({year : year, shipkey: shipkey, url : bdn_url})
 })
 
+app.post("/search_ship", async(req, res)=>{
+    const shipname = req.body.ship
+    const shipname_list = []
+    try {
+        const data = await fetchLocalJsonFile('./ships_data.json');
+        for (let company in data) {
+            for (let ship of data[company]) {
+                if (ship.SHIPNAME.toLowerCase().includes(shipname.toLowerCase())) {
+                    shipname_list.push(ship.SHIPNAME);
+                    console.log(shipname_list)
+                }
+            }
+        }
+        res.status(200).send(shipname_list)
+
+    } catch (error) {
+        console.error('Error:', error);
+        res.status(500).send('Internal Server Error');
+    }
+})
+
 
 app.listen(port, () => {
     console.log(port + "에서 서버 동작 완료.");

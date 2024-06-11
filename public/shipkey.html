@@ -9,15 +9,16 @@
 </head>
 <body>
     <div class="container" id="container">
-        <input type="text" id="shipname" value="" onkeypress="handleKeyPress(event)">
+        <input type="text" id="shipname" value="" onkeyup="handleKeyPress(event)" list="shipname_list">
         <button class="shipname_send" onclick="shipname_click()" >전송</button>
-        <button id="cookie" onclick="fetchAndSaveToken()">cookie</button>
+        <!-- <button id="cookie" onclick="fetchAndSaveToken()">cookie</button> -->
     </div>
     <table id="company_table">        
     </table>
 
 
     <script>
+
        async function shipname_click() {
     const shipname_value = document.getElementById('shipname').value.toUpperCase();
     console.log("Sending shipname:", shipname_value);
@@ -54,9 +55,33 @@
 }
 
 function handleKeyPress(event) {
-    if (event.key === "Enter") {
-        shipname_click();
-    }
+        const keypress = event.target.value
+        console.log(keypress, keypress.length)
+        if(keypress.length>=3){
+            axios.post("/search_ship",{
+                ship : keypress
+}).then((res)=>{
+        const shipname_list = res.data
+        const shipname_datalist = document.createElement('datalist')
+        shipname_datalist.id="shipname_list"
+        container.appendChild(shipname_datalist)
+
+        for(i=0; i<shipname_list.length; i++){
+            const shipname_option = document.createElement('option')
+            shipname_option.id = "shipname_list_value"
+            shipname_option.innerHTML = shipname_list[i]
+            shipname_datalist.appendChild(shipname_option)
+        }
+})
+        }else if(keypress.length <= 2){
+            const container = document.getElementById("container")
+            const shipname_datalist = document.getElementById('shipname_list')
+            // const shipname_option = document.getElementById('shipname_list_value')
+            container.removeChild(shipname_datalist)
+            
+
+        }
+    // }
 }
         document.addEventListener('DOMContentLoaded', () => {
             const container = document.getElementById('container');
