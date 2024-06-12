@@ -1403,6 +1403,70 @@
       "SHIPKEY": "V7A5809"
     }
   ],
+  "TMS": [
+    {
+      "SHIPNAME": "GNS HARVEST",
+      "SHIPKEY": "3ELB7"
+    },
+    {
+      "SHIPNAME": "GNS HARMONY",
+      "SHIPKEY": "V7QK7"
+    },
+    {
+      "SHIPNAME": "GNS HOPE",
+      "SHIPKEY": "D8BK"
+    }
+  ],
+  "SONGA": [
+    {
+      "SHIPNAME": "SONGA PUMA",
+      "SHIPKEY": "D5YU9"
+    },
+    {
+      "SHIPNAME": "SONGA SAPPHIRE",
+      "SHIPKEY": "9HA4873"
+    }
+  ],
+  "GLOVIS": [
+    {
+      "SHIPNAME": "GLOVIS CARDINAL",
+      "SHIPKEY": "D7GV"
+    },
+    {
+      "SHIPNAME": "GLOVIS COMPANION",
+      "SHIPKEY": "5LBH4"
+    },
+    {
+      "SHIPNAME": "GLOVIS SILVER",
+      "SHIPKEY": "D7FY"
+    },
+    {
+      "SHIPNAME": "GLOVIS SONIC",
+      "SHIPKEY": "V7ML7"
+    },
+    {
+      "SHIPNAME": "GLOVIS SUNLIGHT",
+      "SHIPKEY": "V7JP5"
+    },
+    {
+      "SHIPNAME": "GLOVIS SUNRISE",
+      "SHIPKEY": "V7EO2"
+    },
+    {
+      "SHIPNAME": "VL BREEZE",
+      "SHIPKEY": "5LEK3"
+    }
+  ],
+  "SK_SHIPPING": [
+    {
+      "SHIPNAME": "C.GLORY",
+      "SHIPKEY": "3FQD4"
+    },
+    {
+      "SHIPNAME": "SK_TEST1",
+      "SHIPKEY": "SKTEST1"
+    }
+  ],
   "PIL": [
     {
       "SHIPNAME": "KOTA AZAM",
@@ -1747,6 +1811,32 @@
     {
       "SHIPNAME": "SELATAN DAMAI",
       "SHIPKEY": "YBQR2"
+    }
+  ],
+  "HOS": [
+    {
+      "SHIPNAME": "VL BRILLIANT",
+      "SHIPKEY": "H9VU"
+    }
+  ],
+  "ES_MARITIME": [
+    {
+      "SHIPNAME": "SEA CRYSTAL",
+      "SHIPKEY": "3FBD4"
+    }
+  ],
+  "YOUHA_MARINE": [
+    {
+      "SHIPNAME": "CS SUMMER",
+      "SHIPKEY": "3EMU8"
+    },
+    {
+      "SHIPNAME": "CS BREEZE",
+      "SHIPKEY": "3E3975"
+    },
+    {
+      "SHIPNAME": "CS HANA",
+      "SHIPKEY": "3E2119"
     }
   ]
 }

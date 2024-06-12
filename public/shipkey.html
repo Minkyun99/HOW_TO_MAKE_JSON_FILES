@@ -9,90 +9,116 @@
 </head>
 <body>
     <div class="container" id="container">
-        <input type="text" id="shipname" value="" onkeyup="handleKeyPress(event)" list="shipname_list">
-        <button class="shipname_send" onclick="shipname_click()" >전송</button>
-        <!-- <button id="cookie" onclick="fetchAndSaveToken()">cookie</button> -->
+        <input type="text" id="shipname" value="" oninput="handleInput(event)" onkeydown="handleKeyPress(event)" list="shipname_list">
+        <button class="shipname_send" onclick="shipname_click()">전송</button>
     </div>
     <table id="company_table">        
     </table>
-
-
+    <table id="search_table"></table>
+    <datalist id="shipname_list"></datalist>
     <script>
+        async function shipname_click() {
+            const shipname_value = document.getElementById('shipname').value.toUpperCase();
+            console.log("Sending shipname:", shipname_value);
+            try {
+                const response = await axios.post("/send_shipname", { shipname: shipname_value });
+                const shipname = response.data.SHIPNAME;
+                const shipkey = response.data.SHIPKEY;
+                console.log(shipname, shipkey)
 
-       async function shipname_click() {
-    const shipname_value = document.getElementById('shipname').value.toUpperCase();
-    console.log("Sending shipname:", shipname_value);
-    try {
-        const response = await axios.post("/send_shipname", {
-            shipname: shipname_value
-        });
-        const shipname = response.data.SHIPNAME;
-        const shipkey = response.data.SHIPKEY;
-        console.log(shipname, shipkey)
+                if (!shipname || !shipkey) {
+                    console.log("Ship not found");
+                    alert('해당 선박의 데이터를 찾을 수 없습니다.');
+                } else {
+                    const company_table = document.getElementById('company_table');
+                    const shipkey_tr = document.createElement('tr');
+                    const shipkey_td = document.createElement('td');
+                    const shipname_td = document.createElement('td');
 
-        if (!shipname || !shipkey) {
-            console.log("Ship not found");
-            alert('해당 선박의 데이터를 찾을 수 없습니다.');
-        } else {
-            // 선박 데이터를 표시하는 코드
-            const company_table = document.getElementById('company_table');
-            const shipkey_tr = document.createElement('tr');
-            const shipkey_td = document.createElement('td');
-            const shipname_td = document.createElement('td');
+                    shipname_td.innerHTML = shipname;
+                    shipkey_td.innerHTML = shipkey;
 
-            shipname_td.innerHTML = shipname;
-            shipkey_td.innerHTML = shipkey;
+                    company_table.appendChild(shipkey_tr);
+                    shipkey_tr.appendChild(shipname_td);
+                    shipkey_tr.appendChild(shipkey_td);
 
-            company_table.appendChild(shipkey_tr);
-            shipkey_tr.appendChild(shipname_td);
-            shipkey_tr.appendChild(shipkey_td);
-
-            console.log("Found ship:", response.data);
+                    console.log("Found ship:", response.data);
+                }
+            } catch (error) {
+                console.error('Error:', error);
+            }
         }
-    } catch (error) {
-        console.error('Error:', error);
-    }
-}
 
-function handleKeyPress(event) {
-        const keypress = event.target.value
-        console.log(keypress, keypress.length)
-        if(keypress.length>=3){
-            axios.post("/search_ship",{
-                ship : keypress
-}).then((res)=>{
-        const shipname_list = res.data
-        const shipname_datalist = document.createElement('datalist')
-        shipname_datalist.id="shipname_list"
-        container.appendChild(shipname_datalist)
+        async function handleInput(event) {
+            const keypress = event.target.value;
+            if (keypress.length >= 3) {
+                try {
+                    const res = await axios.post("/search_ship", { ship: keypress });
+                    const shipname_list = res.data;
+                    const shipname_datalist = document.getElementById('shipname_list');
+                    shipname_datalist.innerHTML = ''; // Clear previous options
 
-        for(i=0; i<shipname_list.length; i++){
-            const shipname_option = document.createElement('option')
-            shipname_option.id = "shipname_list_value"
-            shipname_option.innerHTML = shipname_list[i]
-            shipname_datalist.appendChild(shipname_option)
+                    for (let i = 0; i < shipname_list.length; i++) {
+                        const shipname_option = document.createElement('option');
+                        shipname_option.value = shipname_list[i];
+                        shipname_datalist.appendChild(shipname_option);
+                    }
+                } catch (error) {
+                    console.error('Error searching ship:', error);
+                }
+            } else {
+                const shipname_datalist = document.getElementById('shipname_list');
+                shipname_datalist.innerHTML = ''; // Clear options if input is less than 3 characters
+            }
         }
-})
-        }else if(keypress.length <= 2){
-            const container = document.getElementById("container")
-            const shipname_datalist = document.getElementById('shipname_list')
-            // const shipname_option = document.getElementById('shipname_list_value')
-            container.removeChild(shipname_datalist)
-            
 
+        async function handleKeyPress(event) {
+            if (event.key === 'Enter') {
+
+                const table = document.getElementById('company_table')
+                table.innerHTML = ""
+
+                const shipname_value = document.getElementById('shipname').value.toUpperCase();
+            console.log("Sending shipname:", shipname_value);
+            try {
+                const response = await axios.post("/send_shipname", { shipname: shipname_value });
+                const shipname = response.data.SHIPNAME;
+                const shipkey = response.data.SHIPKEY;
+                console.log(shipname, shipkey)
+
+                if (!shipname || !shipkey) {
+                    console.log("Ship not found");
+                    alert('해당 선박의 데이터를 찾을 수 없습니다.');
+                } else {
+                    const company_table = document.getElementById('search_table');
+                    const shipkey_tr = document.createElement('tr');
+                    const shipkey_td = document.createElement('td');
+                    const shipname_td = document.createElement('td');
+
+                    shipname_td.innerHTML = shipname;
+                    shipkey_td.innerHTML = shipkey;
+
+                    company_table.appendChild(shipkey_tr);
+                    shipkey_tr.appendChild(shipname_td);
+                    shipkey_tr.appendChild(shipkey_td);
+
+                    console.log("Found ship:", response.data);
+                }
+            } catch (error) {
+                console.error('Error:', error);
+            }
+            }
         }
-    // }
-}
+
         document.addEventListener('DOMContentLoaded', () => {
             const container = document.getElementById('container');
             const company_select = document.createElement('select');
             company_select.id = 'company_select'; 
 
-            const ship_company = ['ALL','CIDO', 'POLARIS', 'POSSM', 'FMLK', 'STX', 'DORIKO', 'TAIKOON', 'KSS', 'HANARO', 'KSM', 'WILHELMSEN', 'SNGLOBAL', 'MEGALINE', 'KORINSTAR', 'FAIR', 'SHINSUNG', 'BEOMJOO', 'JOONGANG', 'SINOKOR', 'LEESHIPPING', 'HANGANG', 'SEONGHO', 'PANBULK', 'WOCEAN', 'GFSM', 'PIL'];
+            const ship_company = ['ALL','CIDO', 'POLARIS', 'POSSM', 'FMLK', 'STX', 'DORIKO', 'TAIKOON', 'KSS', 'HANARO', 'KSM', 'WILHELMSEN', 'SNGLOBAL', 'MEGALINE', 'KORINSTAR', 'FAIR', 'SHINSUNG', 'BEOMJOO', 'JOONGANG', 'SINOKOR', 'LEESHIPPING', 'HANGANG', 'SEONGHO', 'PANBULK', 'WOCEAN', 'GFSM', 'PIL', 'SONGA', 'SK_SHIPPING','YOUHA_MARINE', 'ES_MARINE', 'HOS','TMS','GLOVIS'];
 
             container.appendChild(company_select);
 
-            //select 하위 option 생성
             for (let i = 0; i < ship_company.length; i++) {
                 const company_options = document.createElement('option');
                 company_options.innerHTML = ship_company[i];
@@ -100,121 +126,110 @@ function handleKeyPress(event) {
                 company_select.appendChild(company_options);
             }
 
-            ship_select(); // ship_select 함수 호출
+            ship_select();
         });
 
         function ship_select() {
-    const ship_company_select_event = document.getElementById('company_select');
+            const ship_company_select_event = document.getElementById('company_select');
+            ship_company_select_event.addEventListener('change', (e) => {
+                const ship_company_value = e.target.value;
+                const search_table = document.getElementById('search_table');
+                search_table.innerHTML = '';
 
-    ship_company_select_event.addEventListener('change', (e) => {
-        const ship_company_value = e.target.value;
+                if (ship_company_value === 'ALL') {
+                    axios.post('/send_all_ships')
+                        .then((res) => {
+                            const ships = res.data; 
+                            console.log(ships);
 
-        //테이블 내용 초기화
-        const company_table = document.getElementById('company_table');
-        company_table.innerHTML = '';
+                            for (let company in ships) {
+                                let isFirstRow = true; 
+                                for (let i = 0; i < ships[company].length; i++) {
+                                    const shipkey_tr = document.createElement('tr');
+                                    const shipkey_td = document.createElement('td');
+                                    const shipname_td = document.createElement('td');
+                                    const companyname = document.createElement('td');
+                                    const dailyreport_download_button_2023 = document.createElement('button');
+                                    dailyreport_download_button_2023.id = 'dailyreport_button';
+                                    dailyreport_download_button_2023.addEventListener('click', () => {
+                                        dailyreport_click(2023);
+                                    });
+                                    const dailyreport_download_button_2024 = document.createElement('button');
+                                    dailyreport_download_button_2024.id = 'dailyreport_button';
+                                    dailyreport_download_button_2024.addEventListener('click', () => {
+                                        dailyreport_click(2024);
+                                    });
+                                    const bdn_download_button_2023 = document.createElement('button');
+                                    bdn_download_button_2023.id = 'bdn_button_2023';
+                                    bdn_download_button_2023.addEventListener('click', () => {
+                                        bdn_download(2023);
+                                    });
+                                    const bdn_download_button_2024 = document.createElement('button');
+                                    bdn_download_button_2024.id = 'bdn_button_2024';
+                                    bdn_download_button_2024.addEventListener('click', () => {
+                                        bdn_download(2024);
+                                    });
 
-        if (ship_company_value === 'ALL') {
-            axios.post('/send_all_ships')
-                .then((res) => {
-                    const ships = res.data; // res.data를 ships 변수에 저장
-                    console.log(ships); // 서버에서 받은 데이터를 출력
+                                    if (isFirstRow) {
+                                        companyname.rowSpan = ships[company].length;
+                                        companyname.innerHTML = company;
+                                        shipkey_tr.appendChild(companyname);
+                                        company_table.appendChild(shipkey_tr);
+                                        isFirstRow = false;
+                                    }
 
-                    
-                    for (let company in ships) {
-    let isFirstRow = true; // 첫 번째 행인지 여부를 확인하기 위한 플래그
-    for (let i = 0; i < ships[company].length; i++) {
-        const shipkey_tr = document.createElement('tr');
-        const shipkey_td = document.createElement('td');
-        const shipname_td = document.createElement('td');
-        const companyname = document.createElement('td');
-        const dailyreport_download_button_2023 =document.createElement('button')
-        dailyreport_download_button_2023.id = 'dailyreport_button'
-        dailyreport_download_button_2023.addEventListener('click', () => {
-    dailyreport_click(2023);
-});
-        const dailyreport_download_button_2024 =document.createElement('button')
-        dailyreport_download_button_2024.id = 'dailyreport_button'
-        dailyreport_download_button_2024.addEventListener('click', () => {
-    dailyreport_click(2024);
-});
-        const bdn_download_button_2023 = document.createElement('button')
-        bdn_download_button_2023.id = 'bdn_button_2023'
-        bdn_download_button_2023.addEventListener('click', ()=>{
-            bdn_download(2023)
-        })
-        const bdn_download_button_2024 = document.createElement('button')
-        bdn_download_button_2024.id = 'bdn_button_2024'
-        bdn_download_button_2024.addEventListener('click', ()=>{
-            bdn_download(2024)
-        })
+                                    shipname_td.innerHTML = ships[company][i].SHIPNAME;
+                                    shipkey_td.innerHTML = ships[company][i].SHIPKEY;
+                                    dailyreport_download_button_2023.innerHTML = `daily_2023`;
+                                    dailyreport_download_button_2023.value = ships[company][i].SHIPKEY;
+                                    dailyreport_download_button_2024.innerHTML = `daily_2024`;
+                                    dailyreport_download_button_2024.value = ships[company][i].SHIPKEY;
+                                    bdn_download_button_2023.value = ships[company][i].SHIPKEY;
+                                    bdn_download_button_2023.innerHTML = `bdn_2023`;
+                                    bdn_download_button_2024.value = ships[company][i].SHIPKEY;
+                                    bdn_download_button_2024.innerHTML = `bdn_2024`;
 
-        if (isFirstRow) {
-            companyname.rowSpan = ships[company].length; // 첫 번째 행에만 회사 이름 설정
-            companyname.innerHTML = company; // 첫 번째 행에 회사 이름 추가
-            shipkey_tr.appendChild(companyname); // 회사 이름을 행에 추가
-            company_table.appendChild(shipkey_tr); // 행을 테이블에 추가
-            isFirstRow = false; // isFirstRow를 false로 설정하여 다음 반복에서는 회사 이름을 설정하지 않음
+                                    shipkey_tr.appendChild(shipname_td);
+                                    shipkey_tr.appendChild(shipkey_td);
+                                    shipname_td.appendChild(bdn_download_button_2023);
+                                    shipname_td.appendChild(bdn_download_button_2024);
+
+                                    company_table.appendChild(shipkey_tr);
+                                }
+                            }
+                        })
+                        .catch((error) => {
+                            console.error('Error:', error);
+                        });
+                } else {
+                    axios.post('/send_company_name', { company: ship_company_value })
+                        .then((res) => {
+                            const ships = res.data;
+                            console.log(ships);
+
+                            for (let i = 0; i < ships.length; i++) {
+                                const shipkey_tr = document.createElement('tr');
+                                const shipkey_td = document.createElement('td');
+                                const shipname_td = document.createElement('td');
+
+                                shipkey_td.innerHTML = ships[i].SHIPNAME;
+                                shipname_td.innerHTML = ships[i].SHIPKEY;
+
+                                company_table.appendChild(shipkey_tr);
+                                shipkey_tr.appendChild(shipkey_td);
+                                shipkey_tr.appendChild(shipname_td);
+                            }
+                        })
+                        .catch((error) => {
+                            console.error('Error:', error);
+                        });
+                }
+            });
         }
 
-        shipname_td.innerHTML = ships[company][i].SHIPNAME;
-        shipkey_td.innerHTML = ships[company][i].SHIPKEY;
-        dailyreport_download_button_2023.innerHTML = `daily_2023`
-        dailyreport_download_button_2023.value = ships[company][i].SHIPKEY
-        dailyreport_download_button_2024.innerHTML = `daily_2024`
-        dailyreport_download_button_2024.value = ships[company][i].SHIPKEY
-
-        bdn_download_button_2023.value = ships[company][i].SHIPKEY
-        bdn_download_button_2023.innerHTML = `bdn_2023`
-        bdn_download_button_2024.value = ships[company][i].SHIPKEY
-        bdn_download_button_2024.innerHTML = `bdn_2024`
-        
-        shipkey_tr.appendChild(shipname_td);
-        shipkey_tr.appendChild(shipkey_td);
-        // shipname_td.appendChild(dailyreport_download_button_2023)
-        // shipname_td.appendChild(dailyreport_download_button_2024)
-        shipname_td.appendChild(bdn_download_button_2023)
-        shipname_td.appendChild(bdn_download_button_2024)
-
-        company_table.appendChild(shipkey_tr); // 각 선박 행을 테이블에 추가
-    }
-}
-
-                })
-                .catch((error) => {
-                    console.error('Error:', error);
-                });
-        } else {
-            axios.post('/send_company_name', {
-                    company: ship_company_value
-                })
-                .then((res) => {
-                    const ships = res.data; // res.data를 ships 변수에 저장
-                    console.log(ships); // 서버에서 받은 데이터를 출력
-
-                    // 리스트 아이템 추가
-                    for (let i = 0; i < ships.length; i++) {
-                        const shipkey_tr = document.createElement('tr')
-                        const shipkey_td = document.createElement('td');
-                        const shipname_td = document.createElement('td');
-
-                        shipkey_td.innerHTML = ships[i].SHIPNAME;
-                        shipname_td.innerHTML = ships[i].SHIPKEY;
-
-                        company_table.appendChild(shipkey_tr)
-                        shipkey_tr.appendChild(shipkey_td);
-                        shipkey_tr.appendChild(shipname_td);
-                    }
-                })
-                .catch((error) => {
-                    console.error('Error:', error);
-                });
-        }
-    });
-}
-
-async function fetchAndSaveToken() {
+        async function fetchAndSaveToken() {
             try {
-                const response = await axios.post('/get-token'); // 토큰을 가져오는 API가 필요합니다.
+                const response = await axios.post('/get-token');
                 const token = response.data.token;
                 document.cookie = `authToken=${token}; path=/;`;
                 console.log('Token saved in cookie:', token);
@@ -224,79 +239,71 @@ async function fetchAndSaveToken() {
         }
 
         const axiosInstance = axios.create({
-    withCredentials: true,
-    headers: {
-        'Content-Type': 'application/json'
-    }
-});
-
-async function dailyreport_click(year) {
-    try {
-        const token = getCookie('authToken');
-        if (!token) {
-            throw new Error('No auth token found in cookies');
-        }
-
-        const response = await axios.post('/download_dailyreport', {
-            year: year,
-            shipkey: event.target.value // 여기에 실제 shipkey를 넣으세요.
-        }, {
+            withCredentials: true,
             headers: {
-                Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuaWNrbmFtZSI6InNlcnZpY2UiLCJuYW1lIjoic2VydmljZUBsYWIwMjEuY28ua3IiLCJwaWN0dXJlIjoiaHR0cHM6Ly9zLmdyYXZhdGFyLmNvbS9hdmF0YXIvMTYyNmEzYmE4NDMxMmE0NDdjMzFlNGJmYTk5ZTA3NDc_cz00ODAmcj1wZyZkPWh0dHBzJTNBJTJGJTJGY2RuLmF1dGgwLmNvbSUyRmF2YXRhcnMlMkZzZS5wbmciLCJ1cGRhdGVkX2F0IjoiMjAyNC0wNi0xMFQwMjo1Nzo1OC44MzlaIiwiZW1haWwiOiJzZXJ2aWNlQGxhYjAyMS5jby5rciIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJpc3MiOiJodHRwczovL2xhYjAyMS5hdXRoMC5jb20vIiwiYXVkIjoieVVuaEMzMWNhakJMSHd0WmVMczlYMmhMQ3NNUVB0RlYiLCJpYXQiOjE3MTc5ODgyNzksImV4cCI6MTcxODAyNDI3OSwic3ViIjoiYXV0aDB8NTlhY2ZlMzYyZWY1NjI1YzYzNjFjYjdkIn0.9qpua9EZhzJxBcm1p7LFtypLMDzCxBEwbozIAz8Z_dU`
-            },
-            withCredentials: true
+                'Content-Type': 'application/json'
+            }
         });
 
-        const data = response.data;
-        const url = data.url;
-        const fileName = `dailyreport_${data.year}.xlsx`;
+        async function dailyreport_click(year) {
+            try {
+                const token = getCookie('authToken');
+                if (!token) {
+                    throw new Error('No auth token found in cookies');
+                }
 
-        console.log(url, token);
+                const response = await axios.post('/download_dailyreport', {
+                    year: year,
+                    shipkey: event.target.value
+                }, {
+                    headers: {
+                        Authorization: `Bearer ${token}`
+                    },
+                    withCredentials: true
+                });
 
-        const link = document.createElement('a');
-        link.href = url;
-        link.setAttribute('download', fileName);
-        link.style.display = 'none';
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
+                const data = response.data;
+                const url = data.url;
+                const fileName = `dailyreport_${data.year}.xlsx`;
 
-    } catch (error) {
-        console.error('Error downloading daily report:', error);
-    }
-}
-       
+                const link = document.createElement('a');
+                link.href = url;
+                link.setAttribute('download', fileName);
+                link.style.display = 'none';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+
+            } catch (error) {
+                console.error('Error downloading daily report:', error);
+            }
+        }
+
         function getCookie(name) {
             const value = `; ${document.cookie}`;
             const parts = value.split(`; ${name}=`);
             if (parts.length === 2) return parts.pop().split(';').shift();
         }
 
+        async function bdn_download(year) {
+            try {
+                const res = await axios.post('/bdn_download', {
+                    year: year,
+                    shipkey: event.target.value
+                });
+                const data = res.data;
+                const url = data.url + shipkey + '/' + year;
+                const fileName = `bdn_${data.year}.zip`;
 
-        async function bdn_download (year) {
-            try{
-                axios.post('/bdn_download', {
-                    year : year,
-                    shipkey : event.target.value
-                }).then((res)=>{
-                    const data = res.data
-            const shipkey = data.shipkey
-            console.log(shipkey)
-            const url = data.url + shipkey+ '/' + year;
-            const fileName = `bdn_${data.year}.zip`;
-
-            console.log(url);
-
-            const link = document.createElement('a');
-            link.href = url;
-            link.setAttribute('download', fileName);
-            link.style.display = 'none';
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-                })
-            } catch{
-
+                const link = document.createElement('a');
+                link.href = url;
+                link.setAttribute('download', fileName);
+                link.style.display = 'none';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            } catch (error) {
+                console.error('Error downloading BDN:', error);
             }
         }
     </script>

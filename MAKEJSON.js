@@ -82,6 +82,27 @@ const GFSM_shipname = ['DAESAN CHEMI',  'ONSAN CHEMI',  'THAI CHEMI',  'BANGKOK 
 const PIL_shipname = ["KOTA AZAM","KOTA CABAR","KOTA CAHAYA","KOTA CANTIK","KOTA CARUM","KOTA CEMPAKA","KOTA CEPAT","KOTA DAHLIA","KOTA DUNIA","KOTA DUTA","KOTA GABUNG","KOTA GADANG","KOTA GANDING","KOTA GAYA","KOTA HAKIM","KOTA HALUS","KOTA HANDAL","KOTA HAPAS","KOTA HARUM","KOTA HENING","KOTA HIDAYAH","KOTA JAYA","KOTA JOHAN","KOTA KAMIL","KOTA KARIM","KOTA KAYA","KOTA LAGU","KOTA LAMBAI","KOTA LAMBANG","KOTA LARIS","KOTA LAWA","KOTA LAYANG","KOTA LEGIT","KOTA LEKAS","KOTA LEMBAH","KOTA LESTARI","KOTA LIMA","KOTA LOCENG","KOTA LUKIS","KOTA LUMAYAN","KOTA LUMBA","KOTA MACHAN","KOTA MAKMUR","KOTA MANIS","KOTA MEGAH","KOTA NABIL","KOTA NAGA","KOTA NALURI","KOTA NANHAI","KOTA NASRAT","KOTA NAZAR","KOTA NAZIM","KOTA NEBULA","KOTA NEKAD","KOTA NILAM","KOTA NIPAH","KOTA PAHLAWAN","KOTA PURI","KOTA PUSAKA","KOTA RAHMAT","KOTA RAJA","KOTA RAJIN","KOTA RAKAN","KOTA RAKYAT","KOTA RANCAK","KOTA RATNA","KOTA RATU","KOTA RESTU","KOTA RIA","KOTA RUKUN","KOTA SAHABAT","KOTA SALAM","KOTA SANTOS","KOTA SATRIA","KOTA SEGAR","KOTA SEJARAH","KOTA SEJATI","KOTA SELAMAT","KOTA SEMPENA","KOTA SETIA","KOTA SINGA","KOTA SURIA","KOTA TEMA","KOTA TENAGA","SALAM MAJU","SELATAN DAMAI"]
 const PIL_shipkey = ["S6BL","9V6247","9V7831","9V7835","9V7838","9VLP3","9VLP8","9VED9","9V7847","9V8167","9V7465","9V7643","9V7660","9V7466","9V8257","9V8258","9V7329","9V8259","9VFF8","9V7332","9VAL4","9V7333","VRQR6","9VJK6","9V7839","3ENH5","9V7258","9VFX5","9VFX9","9V7259","9V7472","9V7337","9V8481","9V8480","9V7665","9V2116","D5JI9","9V7667","VRSN8","VRSO2","VRSO3","9V9976","VRRC2","9V9975","9V9978","9VFX3","9VFX4","9VHP2","9VHM9","9V7346","9V8600","9VEY4","9V6396","H3HS","3EZQ8","9V9332","9V5293","VRSB5","VRSB2","9VEY2","S6SS","S6BH6","9V7348","9VJK5","S6BH8","S6TI","S6ST","9V8166","9VJK4","S6TJ","9V2122","9V2123","D5WO7","9V2124","9V2125","9V2126","9V2127","9V2128","9V2129","9V2130","9V2131","9V2132","9V9309","S6AL7","9M2383","YBQR2",]
 
+const HOS_shipname = ["VL BRILLIANT"]
+const HOS_shipkey =['H9VU']
+
+const EsMaritime_shipname = ["SEA CRYSTAL"]
+const EsMaritime_shipkey = ["3FBD4"]
+
+const YOUHAMARINE_shipname =["CS SUMMER", "CS BREEZE", "CS HANA"]
+const YOUHAMARINE_shipkey =["3EMU8", '3E3975', '3E2119']
+
+const GLOVIS_shipname =['GLOVIS CARDINAL', 'GLOVIS COMPANION', 'GLOVIS SILVER', 'GLOVIS SONIC','GLOVIS SUNLIGHT', 'GLOVIS SUNRISE', 'VL BREEZE']
+const GLOVIS_shipkey =['D7GV', '5LBH4', 'D7FY', 'V7ML7', 'V7JP5', 'V7EO2', '5LEK3']
+
+const SONGA_shipname = ['SONGA PUMA', 'SONGA SAPPHIRE' ]
+const SONGA_shipkey = ['D5YU9', '9HA4873']
+
+const SK_SHIPPING_shipname = ['C.GLORY', 'SK_TEST1']
+const SK_SHIPPING_shipkey = ['3FQD4', 'SKTEST1']
+
+const TMS_shipname = ['GNS HARVEST', 'GNS HARMONY', 'GNS HOPE']
+const TMS_shipkey = ['3ELB7', 'V7QK7', 'D8BK']
+
 function makejson_shipkey (shipnames, shipkeys) {
     return shipnames.map((name, index) => ({
       SHIPNAME: name,
@@ -118,8 +139,14 @@ function makejson_shipkey (shipnames, shipkeys) {
     PANBULK : makejson_shipkey (PANBULK_shipname, PANBULK_shipkey),
     WOCEAN : makejson_shipkey (WOCEAN_shipname, WOCEAN_shipkey),
     GFSM : makejson_shipkey (GFSM_shipname, GFSM_shipkey),
-    PIL : makejson_shipkey (PIL_shipname,PIL_shipkey)
-    
+    TMS : makejson_shipkey(TMS_shipname, TMS_shipkey),
+    SONGA : makejson_shipkey(SONGA_shipname, SONGA_shipkey),
+    GLOVIS : makejson_shipkey(GLOVIS_shipname, GLOVIS_shipkey),
+    SK_SHIPPING : makejson_shipkey(SK_SHIPPING_shipname, SK_SHIPPING_shipkey),
+    PIL : makejson_shipkey (PIL_shipname,PIL_shipkey),
+    HOS : makejson_shipkey (HOS_shipname,HOS_shipkey),
+    ES_MARITIME : makejson_shipkey (EsMaritime_shipname,EsMaritime_shipkey),
+    YOUHA_MARINE : makejson_shipkey (YOUHAMARINE_shipname,YOUHAMARINE_shipkey)
   };
 
 
