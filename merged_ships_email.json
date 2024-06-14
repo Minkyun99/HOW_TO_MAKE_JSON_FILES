@@ -1,0 +1,2524 @@
+{
+  "CIDO": [
+    {
+      "SHIPNAME": "DREAM ORCHID",
+      "SHIPKEY": "3FPB",
+      "EMAIL": "dror@vessel.cidoship.com"
+    },
+    {
+      "SHIPNAME": "FORTUNE BELL",
+      "SHIPKEY": "VRTB8",
+      "EMAIL": "fobe@vessel.cidoship.com"
+    },
+    {
+      "SHIPNAME": "FORTUNE TIGER",
+      "SHIPKEY": "VRMB8",
+      "EMAIL": "foti@vessel.cidoship.com"
+    },
+    {
+      "SHIPNAME": "FORTUNE VIOLET",
+      "SHIPKEY": "VRKL7",
+      "EMAIL": "fovi@vessel.cidoship.com"
+    },
+    {
+      "SHIPNAME": "FORTUNE WING",
+      "SHIPKEY": "VRHW2",
+      "EMAIL": "fowi@vessel.cidoship.com"
+    },
+    {
+      "SHIPNAME": "GOLD ESTRELLA",
+      "SHIPKEY": "3EPV3",
+      "EMAIL": "gest@vessel.cidoship.com"
+    },
+    {
+      "SHIPNAME": "GRAND AURORA",
+      "SHIPKEY": "H8MK",
+      "EMAIL": "grau@vessel.cidoship.com"
+    },
+    {
+      "SHIPNAME": "GRAND CHAMPION",
+      "SHIPKEY": "3EOR3",
+      "EMAIL": "grcp@vessel.cidoship.com"
+    },
+    {
+      "SHIPNAME": "GRAND CHOICE",
+      "SHIPKEY": "3FDW9",
+      "EMAIL": "grch@vessel.cidoship.com"
+    },
+    {
+      "SHIPNAME": "GRAND COSMO",
+      "SHIPKEY": "3EDQ",
+      "EMAIL": "grco@vessel.cidoship.com"
+    },
+    {
+      "SHIPNAME": "GRAND DAHLIA",
+      "SHIPKEY": "3FRA8",
+      "EMAIL": "grda@vessel.cidoship.com"
+    },
+    {
+      "SHIPNAME": "GRAND DIAMOND",
+      "SHIPKEY": "3EHY",
+      "EMAIL": "grdi@vessel.cidoship.com"
+    },
+    {
+      "SHIPNAME": "GRAND DOLPHIN",
+      "SHIPKEY": "H3WF",
+      "EMAIL": "grdo@vessel.cidoship.com"
+    },
+    {
+      "SHIPNAME": "GRAND DUKE",
+      "SHIPKEY": "3ECP7",
+      "EMAIL": "grdu@vessel.cidoship.com"
+    },
+    {
+      "SHIPNAME": "GRAND EAGLE",
+      "SHIPKEY": "HOXM",
+      "EMAIL": "grea@vessel.cidoship.com"
+    },
+    {
+      "SHIPNAME": "GRAND HERO",
+      "SHIPKEY": "3EKW7",
+      "EMAIL": "grhe@vessel.cidoship.com"
+    },
+    {
+      "SHIPNAME": "GRAND LEGACY",
+      "SHIPKEY": "3FYG8",
+      "EMAIL": "grle@vessel.cidoship.com"
+    },
+    {
+      "SHIPNAME": "GRAND MARK",
+      "SHIPKEY": "H3LL",
+      "EMAIL": "grma@vessel.cidoship.com"
+    },
+    {
+      "SHIPNAME": "GRAND MERCURY",
+      "SHIPKEY": "HOOC",
+      "EMAIL": "grme@vessel.cidoship.com"
+    },
+    {
+      "SHIPNAME": "GRAND NEPTUNE",
+      "SHIPKEY": "3EEX9",
+      "EMAIL": "grne@vessel.cidoship.com"
+    },
+    {
+      "SHIPNAME": "GRAND ORION",
+      "SHIPKEY": "3EES",
+      "EMAIL": "gror@vessel.cidoship.com"
+    },
+    {
+      "SHIPNAME": "GRAND PACE",
+      "SHIPKEY": "3FGJ9",
+      "EMAIL": "grpa@vessel.cidoship.com"
+    },
+    {
+      "SHIPNAME": "GRAND PAVO",
+      "SHIPKEY": "3EAG4",
+      "EMAIL": "grpv@vessel.cidoship.com"
+    },
+    {
+      "SHIPNAME": "GRAND PHOENIX",
+      "SHIPKEY": "HOWE",
+      "EMAIL": "grph@vessel.cidoship.com"
+    },
+    {
+      "SHIPNAME": "GRAND PIONEER",
+      "SHIPKEY": "HOBN",
+      "EMAIL": "grpi@vessel.cidoship.com"
+    },
+    {
+      "SHIPNAME": "GRAND QUEST",
+      "SHIPKEY": "3FTO9",
+      "EMAIL": "grqu@vessel.cidoship.com"
+    },
+    {
+      "SHIPNAME": "GRAND RACE",
+      "SHIPKEY": "3FZH9",
+      "EMAIL": "grra@vessel.cidoship.com"
+    },
+    {
+      "SHIPNAME": "GRAND RUBY",
+      "SHIPKEY": "3EIU3",
+      "EMAIL": "grru@vessel.cidoship.com"
+    },
+    {
+      "SHIPNAME": "GRAND SAPPHIRE",
+      "SHIPKEY": "3EJH",
+      "EMAIL": "grsa@vessel.cidoship.com"
+    },
+    {
+      "SHIPNAME": "GRAND URANUS",
+      "SHIPKEY": "VRRG3",
+      "EMAIL": "grur@vessel.cidoship.com"
+    },
+    {
+      "SHIPNAME": "GRAND VEGA",
+      "SHIPKEY": "3FWB5",
+      "EMAIL": "grvg@vessel.cidoship.com"
+    },
+    {
+      "SHIPNAME": "GRAND VENUS",
+      "SHIPKEY": "3EGG5",
+      "EMAIL": "grve@vessel.cidoship.com"
+    },
+    {
+      "SHIPNAME": "GRAND VICTORY",
+      "SHIPKEY": "3ERC7",
+      "EMAIL": "grvi@vessel.cidoship.com"
+    },
+    {
+      "SHIPNAME": "GREAT NAVIGATOR",
+      "SHIPKEY": "VRBW8",
+      "EMAIL": "gtna@vessel.cidoship.com"
+    },
+    {
+      "SHIPNAME": "MODERN LINK",
+      "SHIPKEY": "H3HZ",
+      "EMAIL": "mrli@vessel.cidoship.com"
+    },
+    {
+      "SHIPNAME": "SPRING SKY",
+      "SHIPKEY": "VRHC7",
+      "EMAIL": "spsk@vessel.cidoship.com"
+    },
+    {
+      "SHIPNAME": "SPRING WIND",
+      "SHIPKEY": "VRHO3",
+      "EMAIL": "spwi@vessel.cidoship.com"
+    }
+  ],
+  "POLARIS": [
+    {
+      "SHIPNAME": "POLAR ACE",
+      "SHIPKEY": "V7EA5",
+      "EMAIL": "POLARACE@polaris-ship.com"
+    },
+    {
+      "SHIPNAME": "POLAR BRIGHT",
+      "SHIPKEY": "V7OY9",
+      "EMAIL": "POLARBRIGHT@polaris-ship.com"
+    },
+    {
+      "SHIPNAME": "SAO DIANA",
+      "SHIPKEY": "V7FA9",
+      "EMAIL": "SAODIANA@polaris-ship.com"
+    },
+    {
+      "SHIPNAME": "SAO EBBA",
+      "SHIPKEY": "V7A2061",
+      "EMAIL": "SAOEBBA@polaris-ship.com"
+    },
+    {
+      "SHIPNAME": "SAO FABIAN",
+      "SHIPKEY": "V7A2218",
+      "EMAIL": "SAOFABIAN@polaris-ship.com"
+    },
+    {
+      "SHIPNAME": "SAO GRACE",
+      "SHIPKEY": "V7A2302",
+      "EMAIL": "SAOGRACE@polaris-ship.com"
+    },
+    {
+      "SHIPNAME": "SAO HEAVEN",
+      "SHIPKEY": "V7A2303",
+      "EMAIL": "SAOHEAVEN@polaris-ship.com"
+    },
+    {
+      "SHIPNAME": "SAO INDIGO",
+      "SHIPKEY": "V7A2304",
+      "EMAIL": "SAOINDIGO@polaris-ship.com"
+    },
+    {
+      "SHIPNAME": "SAO JOY",
+      "SHIPKEY": "V7A2305",
+      "EMAIL": "SAOJOY@polaris-ship.com"
+    },
+    {
+      "SHIPNAME": "SAO KAREN",
+      "SHIPKEY": "V7A2306",
+      "EMAIL": "SAOKAREN@polaris-ship.com"
+    },
+    {
+      "SHIPNAME": "SAO QUIXOTE",
+      "SHIPKEY": "3FML6",
+      "EMAIL": "SAOQUIXOTE@polaris-ship.com"
+    },
+    {
+      "SHIPNAME": "SAO ROSE OF SHARON",
+      "SHIPKEY": "3FOY2",
+      "EMAIL": "SAOROSEOFSHARON@polaris-ship.com"
+    },
+    {
+      "SHIPNAME": "SAO SABIA",
+      "SHIPKEY": "3FWQ7",
+      "EMAIL": "SAOSABIA@polaris-ship.com"
+    },
+    {
+      "SHIPNAME": "SAO TITAN",
+      "SHIPKEY": "3ETY8",
+      "EMAIL": "SAOTITAN@polaris-ship.com"
+    },
+    {
+      "SHIPNAME": "SAO UNISON",
+      "SHIPKEY": "3FYQ",
+      "EMAIL": "SAOUNISON@polaris-ship.com"
+    },
+    {
+      "SHIPNAME": "SOLAR DOLPHIN",
+      "SHIPKEY": "3FKA8",
+      "EMAIL": "SOLARDOLPHIN@polaris-ship.com"
+    },
+    {
+      "SHIPNAME": "SOLAR FRONTIER",
+      "SHIPKEY": "VRQI8",
+      "EMAIL": "SOLARFRONTIER@polaris-ship.com"
+    },
+    {
+      "SHIPNAME": "SOLAR GLORY",
+      "SHIPKEY": "VRQI9",
+      "EMAIL": "SOLARGLORY@polaris-ship.com"
+    },
+    {
+      "SHIPNAME": "SOLAR HOPE",
+      "SHIPKEY": "VRQI7",
+      "EMAIL": "SOLARHOPE@polaris-ship.com"
+    },
+    {
+      "SHIPNAME": "SOLAR ICON",
+      "SHIPKEY": "VRQJ2",
+      "EMAIL": "SOLARICON@polaris-ship.com"
+    },
+    {
+      "SHIPNAME": "SOLAR LEGEND",
+      "SHIPKEY": "V7OP5",
+      "EMAIL": "SOLARLEGEND@polaris-ship.com"
+    },
+    {
+      "SHIPNAME": "SOLAR MAJESTY",
+      "SHIPKEY": "3FID9",
+      "EMAIL": "SOLARMAJESTY@polaris-ship.com"
+    },
+    {
+      "SHIPNAME": "SOLAR NOVA",
+      "SHIPKEY": "3EON6",
+      "EMAIL": "SOLARNOVA@polaris-ship.com"
+    },
+    {
+      "SHIPNAME": "SOLAR OAK",
+      "SHIPKEY": "3FGW7",
+      "EMAIL": "SOLAROAK@polaris-ship.com"
+    },
+    {
+      "SHIPNAME": "SOLAR PRIDE",
+      "SHIPKEY": "3ENC6",
+      "EMAIL": "SOLARPRIDE@polaris-ship.com"
+    },
+    {
+      "SHIPNAME": "SOLAR QUANTUM",
+      "SHIPKEY": "3FUX3",
+      "EMAIL": "SOLARQUANTUM@polaris-ship.com"
+    },
+    {
+      "SHIPNAME": "STELLAR ACE",
+      "SHIPKEY": "V7QW5",
+      "EMAIL": "STELLARACE@polaris-ship.com"
+    },
+    {
+      "SHIPNAME": "STELLAR CROWN",
+      "SHIPKEY": "V7SW5",
+      "EMAIL": "STELLARCROWN@polaris-ship.com"
+    },
+    {
+      "SHIPNAME": "STELLAR VENTURE",
+      "SHIPKEY": "3EYF7",
+      "EMAIL": "STELLARVENTURE@polaris-ship.com"
+    },
+    {
+      "SHIPNAME": "STELLAR WAY",
+      "SHIPKEY": "3FDC6",
+      "EMAIL": "STELLARWAY@polaris-ship.com"
+    },
+    {
+      "SHIPNAME": "STELLAR YOUNG",
+      "SHIPKEY": "3EJX9",
+      "EMAIL": "STELLARYOUNG@polaris-ship.com"
+    }
+  ],
+  "POSSM": [
+    {
+      "SHIPNAME": "ARBORELLA",
+      "SHIPKEY": "V7YS2",
+      "EMAIL": "ARBORELLA@panocean.com"
+    },
+    {
+      "SHIPNAME": "BRASSIANA",
+      "SHIPKEY": "V7ZK3",
+      "EMAIL": "BRASSIANA@panocean.com"
+    },
+    {
+      "SHIPNAME": "BUM SHIN",
+      "SHIPKEY": "V7RD7",
+      "EMAIL": "BUMSHIN@panocean.com"
+    },
+    {
+      "SHIPNAME": "BUM YOUNG",
+      "SHIPKEY": "V7RD8",
+      "EMAIL": "BUMYOUNG@panocean.com"
+    },
+    {
+      "SHIPNAME": "CITRIODORA",
+      "SHIPKEY": "V7AH6",
+      "EMAIL": "CITRIODORA@panocean.com"
+    },
+    {
+      "SHIPNAME": "CS BREEZE",
+      "SHIPKEY": "3E3975",
+      "EMAIL": "CSBREEZE@sea-one.com"
+    },
+    {
+      "SHIPNAME": "CS CRANE",
+      "SHIPKEY": "3EJD9",
+      "EMAIL": "CSCRANE@sea-one.com"
+    },
+    {
+      "SHIPNAME": "CS HANA",
+      "SHIPKEY": "3E2119",
+      "EMAIL": "CSHANA@sea-one.com"
+    },
+    {
+      "SHIPNAME": "CS SUMMER",
+      "SHIPKEY": "3EMU8",
+      "EMAIL": "CSSUMMER@sea-one.com"
+    },
+    {
+      "SHIPNAME": "DELICATA",
+      "SHIPKEY": "V7AQ5",
+      "EMAIL": "DELICATA@panocean.com"
+    },
+    {
+      "SHIPNAME": "DUNNII",
+      "SHIPKEY": "V7A2104",
+      "EMAIL": "DUNNII@panocean.com"
+    },
+    {
+      "SHIPNAME": "GRAND ACE1",
+      "SHIPKEY": "3EEH2",
+      "EMAIL": "GRANDACE1@panocean.com"
+    },
+    {
+      "SHIPNAME": "GRAND ACE10",
+      "SHIPKEY": "3EPV8",
+      "EMAIL": "GRANDACE10@panocean.com"
+    },
+    {
+      "SHIPNAME": "GRAND ACE11",
+      "SHIPKEY": "3EQZ9",
+      "EMAIL": "GRANDACE11@panocean.com"
+    },
+    {
+      "SHIPNAME": "GRAND ACE12",
+      "SHIPKEY": "3ETG3",
+      "EMAIL": "GRANDACE12@panocean.com"
+    },
+    {
+      "SHIPNAME": "GRAND ACE5",
+      "SHIPKEY": "3EIG9",
+      "EMAIL": "GRANDACE5@panocean.com"
+    },
+    {
+      "SHIPNAME": "GRAND ACE6",
+      "SHIPKEY": "3EIW4",
+      "EMAIL": "GRANDACE6@panocean.com"
+    },
+    {
+      "SHIPNAME": "GRAND ACE9",
+      "SHIPKEY": "3EPV7",
+      "EMAIL": "GRANDACE9@panocean.com"
+    },
+    {
+      "SHIPNAME": "GRAND AMBITION",
+      "SHIPKEY": "3E2391",
+      "EMAIL": "GRANDAMBITION@panocean.com"
+    },
+    {
+      "SHIPNAME": "GRAND BONANZA",
+      "SHIPKEY": "3E2390",
+      "EMAIL": "GRANDBONANZA@panocean.com"
+    },
+    {
+      "SHIPNAME": "GRAND WINNER 1",
+      "SHIPKEY": "3FZH2",
+      "EMAIL": "GRANDWINNER1@panocean.com"
+    },
+    {
+      "SHIPNAME": "GRAND WINNER 2",
+      "SHIPKEY": "HPOZ",
+      "EMAIL": "GRANDWINNER2@panocean.com"
+    },
+    {
+      "SHIPNAME": "GRAND WINNER 3",
+      "SHIPKEY": "3E3968",
+      "EMAIL": "GRANDWINNER3@panocean.com"
+    },
+    {
+      "SHIPNAME": "GRAND WINNER 5",
+      "SHIPKEY": "3E3969",
+      "EMAIL": "GRANDWINNER5@panocean.com"
+    },
+    {
+      "SHIPNAME": "GRANDIS",
+      "SHIPKEY": "V7A2204",
+      "EMAIL": "GRANDIS@panocean.com"
+    },
+    {
+      "SHIPNAME": "HALOPHYLA",
+      "SHIPKEY": "V7BV5",
+      "EMAIL": "HALOPHYLA@panocean.com"
+    },
+    {
+      "SHIPNAME": "HL MIDLAND",
+      "SHIPKEY": "HPSS",
+      "EMAIL": "hlmidland@sea-one.com"
+    },
+    {
+      "SHIPNAME": "LNG KOLT",
+      "SHIPKEY": "3FNM7",
+      "EMAIL": "LNGKOLT@panocean.com"
+    },
+    {
+      "SHIPNAME": "NEW APEX",
+      "SHIPKEY": "3E2615",
+      "EMAIL": "NEWAPEX@panocean.com"
+    },
+    {
+      "SHIPNAME": "PAN ACACIA",
+      "SHIPKEY": "3FUG9",
+      "EMAIL": "PANACACIA@panocean.com"
+    },
+    {
+      "SHIPNAME": "PAN ADVANCE",
+      "SHIPKEY": "3FQN",
+      "EMAIL": "PANADVANCE@panocean.com"
+    },
+    {
+      "SHIPNAME": "PAN AMBER",
+      "SHIPKEY": "V7XS5",
+      "EMAIL": "PANAMBER@panocean.com"
+    },
+    {
+      "SHIPNAME": "PAN BICORN",
+      "SHIPKEY": "V7TG8",
+      "EMAIL": "PANBICORN@panocean.com"
+    },
+    {
+      "SHIPNAME": "PAN BONA",
+      "SHIPKEY": "3FFB8",
+      "EMAIL": "PANBONA@panocean.com"
+    },
+    {
+      "SHIPNAME": "PAN BONITA",
+      "SHIPKEY": "V7YM2",
+      "EMAIL": "PANBONITA@panocean.com"
+    },
+    {
+      "SHIPNAME": "PAN CERES",
+      "SHIPKEY": "V7TI9",
+      "EMAIL": "PANCERES@panocean.com"
+    },
+    {
+      "SHIPNAME": "PAN CHAMPION",
+      "SHIPKEY": "3EXW2",
+      "EMAIL": "PANCHAMPION@panocean.com"
+    },
+    {
+      "SHIPNAME": "PAN CLOVER",
+      "SHIPKEY": "V7Y17",
+      "EMAIL": "PANCLOVER@panocean.com"
+    },
+    {
+      "SHIPNAME": "PAN COSMOS",
+      "SHIPKEY": "V7VX2",
+      "EMAIL": "PANCOSMOS@panocean.com"
+    },
+    {
+      "SHIPNAME": "PAN DANGJIN",
+      "SHIPKEY": "V7IU7",
+      "EMAIL": "PANDANGJIN@panocean.com"
+    },
+    {
+      "SHIPNAME": "PAN DELIGHT",
+      "SHIPKEY": "V7ZW3",
+      "EMAIL": "PANDELIGHT@panocean.com"
+    },
+    {
+      "SHIPNAME": "PAN DREAM",
+      "SHIPKEY": "3FSM4",
+      "EMAIL": "PANDREAM@panocean.com"
+    },
+    {
+      "SHIPNAME": "PAN ENERGEN",
+      "SHIPKEY": "V7XV3",
+      "EMAIL": "PANENERGEN@panocean.com"
+    },
+    {
+      "SHIPNAME": "PAN EPIC",
+      "SHIPKEY": "3FLN3",
+      "EMAIL": "PANEPIC@panocean.com"
+    },
+    {
+      "SHIPNAME": "PAN FALCON",
+      "SHIPKEY": "3FHN3",
+      "EMAIL": "PANFALCON@panocean.com"
+    },
+    {
+      "SHIPNAME": "PAN FLOWER",
+      "SHIPKEY": "3FZO9",
+      "EMAIL": "PANFLOWER@panocean.com"
+    },
+    {
+      "SHIPNAME": "PAN FORTUNE",
+      "SHIPKEY": "D7DA",
+      "EMAIL": "PANFORTUNE@panocean.com"
+    },
+    {
+      "SHIPNAME": "PAN FREEDOM",
+      "SHIPKEY": "3EWI6",
+      "EMAIL": "PANFREEDOM@panocean.com"
+    },
+    {
+      "SHIPNAME": "PAN FREESIA",
+      "SHIPKEY": "V7SB5",
+      "EMAIL": "PANFREESIA@panocean.com"
+    },
+    {
+      "SHIPNAME": "PAN GLOBAL",
+      "SHIPKEY": "3ETU2",
+      "EMAIL": "PANGLOBAL@panocean.com"
+    },
+    {
+      "SHIPNAME": "PAN GOLD",
+      "SHIPKEY": "3FQI",
+      "EMAIL": "pangold@panocean.com"
+    },
+    {
+      "SHIPNAME": "PAN GRACE",
+      "SHIPKEY": "D7CN",
+      "EMAIL": "PANGRACE@panocean.com"
+    },
+    {
+      "SHIPNAME": "PAN HARVEST",
+      "SHIPKEY": "D7EH",
+      "EMAIL": "PANHARVEST@panocean.com"
+    },
+    {
+      "SHIPNAME": "PAN HOPE",
+      "SHIPKEY": "3EZL9",
+      "EMAIL": "PANHOPE@panocean.com"
+    },
+    {
+      "SHIPNAME": "PAN HORIZON",
+      "SHIPKEY": "3EVF9",
+      "EMAIL": "PANHORIZON@panocean.com"
+    },
+    {
+      "SHIPNAME": "PAN IMPERIAL",
+      "SHIPKEY": "3E3447",
+      "EMAIL": "PANIMPERIAL@panocean.com"
+    },
+    {
+      "SHIPNAME": "PAN IRIS",
+      "SHIPKEY": "3EWB4",
+      "EMAIL": "PANIRIS@panocean.com"
+    },
+    {
+      "SHIPNAME": "PAN JASMINE",
+      "SHIPKEY": "V7VI5",
+      "EMAIL": null
+    },
+    {
+      "SHIPNAME": "PAN JOY",
+      "SHIPKEY": "3FFY4",
+      "EMAIL": "PANJOY@panocean.com"
+    },
+    {
+      "SHIPNAME": "PAN KOMIPO",
+      "SHIPKEY": "V7WY3",
+      "EMAIL": "PANKOMIPO@panocean.com"
+    },
+    {
+      "SHIPNAME": "PAN KRISTINE",
+      "SHIPKEY": "V7WS2",
+      "EMAIL": "PANKRISTINE@panocean.com"
+    },
+    {
+      "SHIPNAME": "PAN MAJESTY",
+      "SHIPKEY": "3E3444",
+      "EMAIL": "PANMAJESTY@panocean.com"
+    },
+    {
+      "SHIPNAME": "PAN MARGARET",
+      "SHIPKEY": "3FFH3",
+      "EMAIL": "PANMARGARET@panocean.com"
+    },
+    {
+      "SHIPNAME": "PAN MUTIARA",
+      "SHIPKEY": "V7XJ9",
+      "EMAIL": "PANMUTIARA@panocean.com"
+    },
+    {
+      "SHIPNAME": "PAN NAVIGATOR",
+      "SHIPKEY": "D7EX",
+      "EMAIL": "PANNAVIGATOR@panocean.com"
+    },
+    {
+      "SHIPNAME": "PAN NOVA",
+      "SHIPKEY": "3EAE5",
+      "EMAIL": "PANNOVA@panocean.com"
+    },
+    {
+      "SHIPNAME": "PAN OPTIMUM",
+      "SHIPKEY": "3ETS8",
+      "EMAIL": "PANOPTIMUM@panocean.com"
+    },
+    {
+      "SHIPNAME": "PAN ORION",
+      "SHIPKEY": "DB9BA2C",
+      "EMAIL": "panorion@panocean.com"
+    },
+    {
+      "SHIPNAME": "PAN PEGASUS",
+      "SHIPKEY": "5LML3",
+      "EMAIL": "panpegasus@panocean.com"
+    },
+    {
+      "SHIPNAME": "PAN POSEIDON",
+      "SHIPKEY": "3FRW9",
+      "EMAIL": "PANPOSEIDON@panocean.com"
+    },
+    {
+      "SHIPNAME": "PAN QUANTUM",
+      "SHIPKEY": "5LMV5",
+      "EMAIL": "PANQUANTUM@PANOCEAN.COM"
+    },
+    {
+      "SHIPNAME": "PAN QUEEN",
+      "SHIPKEY": "3FUP4",
+      "EMAIL": "PANQUEEN@panocean.com"
+    },
+    {
+      "SHIPNAME": "PAN QUEST",
+      "SHIPKEY": "3FAA3",
+      "EMAIL": "PANQUEST@panocean.com"
+    },
+    {
+      "SHIPNAME": "PAN RAPIDO",
+      "SHIPKEY": "3FQI8",
+      "EMAIL": "PANRAPIDO@panocean.com"
+    },
+    {
+      "SHIPNAME": "PAN REGINA",
+      "SHIPKEY": "3EGA9",
+      "EMAIL": "PANREGINA@panocean.com"
+    },
+    {
+      "SHIPNAME": "PAN TOPAZ",
+      "SHIPKEY": "3FMZ5",
+      "EMAIL": "PANTOPAZ@panocean.com"
+    },
+    {
+      "SHIPNAME": "PAN VIVA",
+      "SHIPKEY": "3FDN3",
+      "EMAIL": "PANVIVA@panocean.com"
+    },
+    {
+      "SHIPNAME": "POS BANGKOK",
+      "SHIPKEY": "3FDX9",
+      "EMAIL": "POSBANGKOK@panocean.com"
+    },
+    {
+      "SHIPNAME": "POS GUANGZHOU",
+      "SHIPKEY": "3E3870",
+      "EMAIL": "posguangzhou@panocean.com"
+    },
+    {
+      "SHIPNAME": "POS HOCHIMINH",
+      "SHIPKEY": "4117",
+      "EMAIL": "POSHOCHIMINH@panocean.com"
+    },
+    {
+      "SHIPNAME": "POS LAEMCHABANG",
+      "SHIPKEY": "5LOE2",
+      "EMAIL": "poslaemchabang@panocean.com"
+    },
+    {
+      "SHIPNAME": "POS QINGDAO",
+      "SHIPKEY": "3E3863",
+      "EMAIL": "posqingdao@panocean.com"
+    },
+    {
+      "SHIPNAME": "POS SHANGHAI",
+      "SHIPKEY": "D7PS",
+      "EMAIL": "POSSHANGHAI@panocean.com"
+    },
+    {
+      "SHIPNAME": "POS SINGAPORE",
+      "SHIPKEY": "4E0F8FD",
+      "EMAIL": "possingapore@panocean.com"
+    },
+    {
+      "SHIPNAME": "POS TOKYO",
+      "SHIPKEY": "DSNZ8",
+      "EMAIL": "POSTOKYO@panocean.com"
+    },
+    {
+      "SHIPNAME": "POS YOKOHAMA",
+      "SHIPKEY": "DSOU4",
+      "EMAIL": "POSYOKOHAMA@panocean.com"
+    },
+    {
+      "SHIPNAME": "ROBUSTA",
+      "SHIPKEY": "V7A2215",
+      "EMAIL": "ROBUSTA@panocean.com"
+    },
+    {
+      "SHIPNAME": "SALIGNA",
+      "SHIPKEY": "V7A2216",
+      "EMAIL": "SALIGNA@panocean.com"
+    },
+    {
+      "SHIPNAME": "SEA BEIJING",
+      "SHIPKEY": "V7XB3",
+      "EMAIL": "SEABEIJING@panocean.com"
+    },
+    {
+      "SHIPNAME": "SEA CAOFEIDIAN",
+      "SHIPKEY": "3EQS6",
+      "EMAIL": "SEACAOFEIDIAN@panocean.com"
+    },
+    {
+      "SHIPNAME": "SEA ESPIRITO SANTO",
+      "SHIPKEY": "V7YY5",
+      "EMAIL": "SEAESPIRITOSANTO@panocean.com"
+    },
+    {
+      "SHIPNAME": "SEA FUJIYAMA",
+      "SHIPKEY": "V7ZA5",
+      "EMAIL": "SEAFUJIYAMA@panocean.com"
+    },
+    {
+      "SHIPNAME": "SEA GUAIBA",
+      "SHIPKEY": "3FUS7",
+      "EMAIL": "SEAGUAIBA@panocean.com"
+    },
+    {
+      "SHIPNAME": "SEA INDONESIA",
+      "SHIPKEY": "V7ZH3",
+      "EMAIL": "SEAINDONESIA@panocean.com"
+    },
+    {
+      "SHIPNAME": "SEA MARANHAO",
+      "SHIPKEY": "V7BB5",
+      "EMAIL": "SEAMARANHAO@panocean.com"
+    },
+    {
+      "SHIPNAME": "SEA PONTA DA MADEIRA",
+      "SHIPKEY": "D8F0",
+      "EMAIL": "SEAPONTADAMADEIRA@panocean.com"
+    },
+    {
+      "SHIPNAME": "SEA QINGDAO",
+      "SHIPKEY": "V7XR6",
+      "EMAIL": "SEAQINGDAO@panocean.com"
+    },
+    {
+      "SHIPNAME": "SEA RIO DE JANEIRO",
+      "SHIPKEY": "HOYT",
+      "EMAIL": "SEARIODEJANEIRO@panocean.com"
+    },
+    {
+      "SHIPNAME": "SEA SHANGHAI",
+      "SHIPKEY": "HOEL",
+      "EMAIL": "SEASHANGHAI@panocean.com"
+    },
+    {
+      "SHIPNAME": "SEA TUBARAO",
+      "SHIPKEY": "V7ZU6",
+      "EMAIL": "SEATUBARAO@panocean.com"
+    },
+    {
+      "SHIPNAME": "SEA VICTORIA",
+      "SHIPKEY": "HOLO",
+      "EMAIL": "SEAVICTORIA@panocean.com"
+    },
+    {
+      "SHIPNAME": "SEA ZHOUSHAN",
+      "SHIPKEY": "HPLT",
+      "EMAIL": "SEAZHOUSHAN@panocean.com"
+    },
+    {
+      "SHIPNAME": "SUN ORCHID",
+      "SHIPKEY": "3EVH6",
+      "EMAIL": "SUNORCHID@panocean.com"
+    },
+    {
+      "SHIPNAME": "SUN RISE",
+      "SHIPKEY": "V7ZD3",
+      "EMAIL": "SUNRISE@panocean.com"
+    },
+    {
+      "SHIPNAME": "SUN SHINE",
+      "SHIPKEY": "H9JL",
+      "EMAIL": "SUNSHINE@panocean.com"
+    },
+    {
+      "SHIPNAME": "SUPER EASTERN",
+      "SHIPKEY": "3FFJ8",
+      "EMAIL": "SUPEREASTERN@panocean.com"
+    },
+    {
+      "SHIPNAME": "SUPER FORTE",
+      "SHIPKEY": "3EWW5",
+      "EMAIL": "SUPERFORTE@panocean.com"
+    },
+    {
+      "SHIPNAME": "SUPER HERO",
+      "SHIPKEY": "H3TY",
+      "EMAIL": "SUPERHERO@panocean.com"
+    },
+    {
+      "SHIPNAME": "SUPER INFINITY",
+      "SHIPKEY": "3FSV8",
+      "EMAIL": "SUPERINFINITY@panocean.com"
+    },
+    {
+      "SHIPNAME": "UROPHYLLA",
+      "SHIPKEY": "V7A2217",
+      "EMAIL": "UROPHYLLA@panocean.com"
+    }
+  ],
+  "FMLK": [
+    {
+      "SHIPNAME": "GRAND ACE7",
+      "SHIPKEY": "3ENU2",
+      "EMAIL": "grandace7@panocean.com"
+    },
+    {
+      "SHIPNAME": "PAN EMERALD",
+      "SHIPKEY": "3FGP4",
+      "EMAIL": "panemerald@panocean.com"
+    },
+    {
+      "SHIPNAME": "PAN IVY",
+      "SHIPKEY": "3FLT2",
+      "EMAIL": "panivy@sea-one.com"
+    },
+    {
+      "SHIPNAME": "PAN PRIDE",
+      "SHIPKEY": "3FXC5",
+      "EMAIL": null
+    },
+    {
+      "SHIPNAME": "PAN SPIRIT",
+      "SHIPKEY": "HOZL",
+      "EMAIL": "pan-spirit@sea-one.com"
+    },
+    {
+      "SHIPNAME": "PAN UNITY",
+      "SHIPKEY": "3EXM5",
+      "EMAIL": "panunity@panocean.com"
+    }
+  ],
+  "STX": [
+    {
+      "SHIPNAME": "BK ALICE",
+      "SHIPKEY": "3ETW3",
+      "EMAIL": null
+    },
+    {
+      "SHIPNAME": "DL ACACIA",
+      "SHIPKEY": "3FAP9",
+      "EMAIL": "dlacacia@sea-one.com"
+    },
+    {
+      "SHIPNAME": "DL ADONIS",
+      "SHIPKEY": "D7CE",
+      "EMAIL": "dladonis@bluewavemail.com"
+    },
+    {
+      "SHIPNAME": "DL DAHLIA",
+      "SHIPKEY": "3FRN",
+      "EMAIL": "dldahlia@sea-one.com"
+    },
+    {
+      "SHIPNAME": "DL IVY",
+      "SHIPKEY": "3ETV",
+      "EMAIL": null
+    },
+    {
+      "SHIPNAME": "DL JASMINE",
+      "SHIPKEY": "3FZM9",
+      "EMAIL": "dljasmine@sea-one.com"
+    },
+    {
+      "SHIPNAME": "DL LAVENDER",
+      "SHIPKEY": "D7EN",
+      "EMAIL": "dllavender@bluewavemail.com"
+    },
+    {
+      "SHIPNAME": "DL LILAC",
+      "SHIPKEY": "3FFH8",
+      "EMAIL": "dllilac@sea-one.com"
+    },
+    {
+      "SHIPNAME": "DL MARIGOLD",
+      "SHIPKEY": "3EWS2",
+      "EMAIL": "dlmarigold@sea-one.com"
+    },
+    {
+      "SHIPNAME": "DL OLIVE",
+      "SHIPKEY": "3FXI6",
+      "EMAIL": "dlolive@bluewavemail.com"
+    },
+    {
+      "SHIPNAME": "DL PANSY",
+      "SHIPKEY": "H3NZ",
+      "EMAIL": "dlpansy@sea-one.com"
+    },
+    {
+      "SHIPNAME": "DL TULIP",
+      "SHIPKEY": "3EYW2",
+      "EMAIL": "dltulip@sea-one.com"
+    },
+    {
+      "SHIPNAME": "DONGBANG GIANT NO.3",
+      "SHIPKEY": "DSQX6",
+      "EMAIL": "dongbang-giant3@sea-one.com"
+    },
+    {
+      "SHIPNAME": "DONGBANG GIANT NO.6",
+      "SHIPKEY": "D8BI",
+      "EMAIL": "dongbang.giant6@sea-one.com"
+    },
+    {
+      "SHIPNAME": "DONGBANG GIANT NO.7",
+      "SHIPKEY": "DSPE",
+      "EMAIL": "dongbang.giant7@sea-one.com"
+    },
+    {
+      "SHIPNAME": "DONGBANG GIANT NO.8",
+      "SHIPKEY": "DSRM5",
+      "EMAIL": "dongbang.giant8@sea-one.com"
+    },
+    {
+      "SHIPNAME": "INWANG",
+      "SHIPKEY": "D7FW",
+      "EMAIL": "inwang@bluewavemail.com"
+    },
+    {
+      "SHIPNAME": "MEGA CARAVAN",
+      "SHIPKEY": "DSMZ4",
+      "EMAIL": "megacaravan@megavessel.co.kr"
+    },
+    {
+      "SHIPNAME": "MEGA CARAVAN 2",
+      "SHIPKEY": "DSMZ7",
+      "EMAIL": "megacaravan2@megavessel.co.kr"
+    },
+    {
+      "SHIPNAME": "MINERAL CHINA",
+      "SHIPKEY": "D7GC",
+      "EMAIL": "mineralchina@sea-one.com"
+    },
+    {
+      "SHIPNAME": "ORIENTAL ENTERPRISE",
+      "SHIPKEY": "D7CK",
+      "EMAIL": "orientalenterprise@sea-one.com"
+    },
+    {
+      "SHIPNAME": "ORIENTAL FRONTIER",
+      "SHIPKEY": "DSQM7",
+      "EMAIL": "orientalfrontier@sea-one.com"
+    },
+    {
+      "SHIPNAME": "ORIENTAL LEADER",
+      "SHIPKEY": "DSRL5",
+      "EMAIL": "orientalleader@sea-one.com"
+    },
+    {
+      "SHIPNAME": "ORIENTAL NAVIGATOR",
+      "SHIPKEY": "DSMA8",
+      "EMAIL": "orientalnavigator@sea-one.com"
+    },
+    {
+      "SHIPNAME": "ORIENTAL STAR",
+      "SHIPKEY": "D5XF3",
+      "EMAIL": "orientalstar@sea-one.com"
+    },
+    {
+      "SHIPNAME": "SEA FUTURE",
+      "SHIPKEY": "V7MI8",
+      "EMAIL": "seafuture@sea-one.com"
+    },
+    {
+      "SHIPNAME": "SEA HONESTY",
+      "SHIPKEY": "V7FV2",
+      "EMAIL": "seahonesty@sea-one.com"
+    },
+    {
+      "SHIPNAME": "SHINSUNG CLEVER",
+      "SHIPKEY": "V7A2271",
+      "EMAIL": "s.clever@bluewavemail.com"
+    },
+    {
+      "SHIPNAME": "ULTRA ALPHA",
+      "SHIPKEY": "V7JJ8",
+      "EMAIL": "UTA@amosconnect.com"
+    }
+  ],
+  "DORIKO": [
+    {
+      "SHIPNAME": "AH SHIN",
+      "SHIPKEY": "3FBO9",
+      "EMAIL": "asn@skyfile.com"
+    },
+    {
+      "SHIPNAME": "CHANG SHIN",
+      "SHIPKEY": "P3ZU9",
+      "EMAIL": "master.csh@skyfile.com"
+    },
+    {
+      "SHIPNAME": "CRYSTAL OCEAN",
+      "SHIPKEY": "DSPL8",
+      "EMAIL": "cro@amosconnect.com"
+    },
+    {
+      "SHIPNAME": "G POSEIDON",
+      "SHIPKEY": "HP6652",
+      "EMAIL": "gpo@sksat.kr"
+    },
+    {
+      "SHIPNAME": "GMT ASTRO",
+      "SHIPKEY": "3FKQ7",
+      "EMAIL": "GMA@amosconnect.com"
+    },
+    {
+      "SHIPNAME": "HAE SHIN",
+      "SHIPKEY": "3FWI3",
+      "EMAIL": "hae@skyfile.com"
+    },
+    {
+      "SHIPNAME": "LADY CEDROS",
+      "SHIPKEY": "DSQV8",
+      "EMAIL": null
+    },
+    {
+      "SHIPNAME": "PAN GLOD",
+      "SHIPKEY": "3FQI",
+      "EMAIL": null
+    },
+    {
+      "SHIPNAME": "PAN SPIRIT",
+      "SHIPKEY": "HOZL",
+      "EMAIL": "pan-spirit@sea-one.com"
+    },
+    {
+      "SHIPNAME": "SANG SHIN",
+      "SHIPKEY": "3FUX9",
+      "EMAIL": "master.ssh@skyfile.com"
+    },
+    {
+      "SHIPNAME": "SEA COEN",
+      "SHIPKEY": "V7A2897",
+      "EMAIL": "sco@sksat.kr"
+    },
+    {
+      "SHIPNAME": "SEA GRACE",
+      "SHIPKEY": "V7A5958",
+      "EMAIL": "seagrace@sksat.kr"
+    },
+    {
+      "SHIPNAME": "SJ ASIA",
+      "SHIPKEY": "D7MD",
+      "EMAIL": "sja@amosconnect.com"
+    },
+    {
+      "SHIPNAME": "SOO SHIN",
+      "SHIPKEY": "3E3409",
+      "EMAIL": "master.son@skyfile.com"
+    },
+    {
+      "SHIPNAME": "YOUNG SHIN",
+      "SHIPKEY": "3ELP9",
+      "EMAIL": "ysh@skyfile.com"
+    }
+  ],
+  "TAIKOON": [
+    {
+      "SHIPNAME": "CARIBBEAN1",
+      "SHIPKEY": "3FTT2",
+      "EMAIL": null
+    },
+    {
+      "SHIPNAME": "DM CONDOR",
+      "SHIPKEY": "3EPT4",
+      "EMAIL": "dmcondor@sea-one.com "
+    },
+    {
+      "SHIPNAME": "DM DRAGON",
+      "SHIPKEY": "D7LA",
+      "EMAIL": "dmdragon@sea-one.com "
+    },
+    {
+      "SHIPNAME": "DM EMERALD",
+      "SHIPKEY": "3EWR4",
+      "EMAIL": "dmemerald@sea-one.com"
+    },
+    {
+      "SHIPNAME": "DM JADE",
+      "SHIPKEY": "HPSV",
+      "EMAIL": "Dmjade@SkyFile.com "
+    },
+    {
+      "SHIPNAME": "DS COUGAR",
+      "SHIPKEY": "D7UK",
+      "EMAIL": "dscougar@sea-one.com "
+    },
+    {
+      "SHIPNAME": "DS OCEAN",
+      "SHIPKEY": "D7VR",
+      "EMAIL": "dsocean@sea-one.com "
+    },
+    {
+      "SHIPNAME": "FG ROTTERDAM",
+      "SHIPKEY": "3EYW9",
+      "EMAIL": "fgrotterdam@sea-one.com"
+    },
+    {
+      "SHIPNAME": "GOLDEN DENISE",
+      "SHIPKEY": "3EGI8",
+      "EMAIL": "goldendenise@sea-one.com "
+    },
+    {
+      "SHIPNAME": "JBU OPAL",
+      "SHIPKEY": "V7IN4",
+      "EMAIL": "jbuopal@gtmailplus.com "
+    },
+    {
+      "SHIPNAME": "JBU SAPPHIRE",
+      "SHIPKEY": "D7FB",
+      "EMAIL": "jbusapphire@sea-one.com "
+    },
+    {
+      "SHIPNAME": "KOREA CHEMI",
+      "SHIPKEY": "D7AD",
+      "EMAIL": "koreachemi@sea-one.com "
+    },
+    {
+      "SHIPNAME": "MEDIA",
+      "SHIPKEY": "D7SI",
+      "EMAIL": null
+    }
+  ],
+  "KSS": [
+    {
+      "SHIPNAME": "GAS ARES",
+      "SHIPKEY": "3FDR8",
+      "EMAIL": "gtar@kssfleet.com"
+    },
+    {
+      "SHIPNAME": "GAS BARBAROSSA",
+      "SHIPKEY": "3EPB500001",
+      "EMAIL": "gtba@kssfleet.com"
+    },
+    {
+      "SHIPNAME": "GAS FRIEND",
+      "SHIPKEY": "3EDU7",
+      "EMAIL": "gtfr@kssfleet.com"
+    },
+    {
+      "SHIPNAME": "GAS GABRIELA",
+      "SHIPKEY": "3FDX3",
+      "EMAIL": "gtgb@kssfleet.com"
+    },
+    {
+      "SHIPNAME": "GAS GALA",
+      "SHIPKEY": "3EBU9",
+      "EMAIL": "gtgl@kssfleet.com"
+    },
+    {
+      "SHIPNAME": "GAS GHAZI",
+      "SHIPKEY": "3E2394",
+      "EMAIL": "gtgh@kssfleet.com"
+    },
+    {
+      "SHIPNAME": "GAS IVORY",
+      "SHIPKEY": "3E2162",
+      "EMAIL": "gtiv@kssfleet.com"
+    },
+    {
+      "SHIPNAME": "GAS JUSTESEN",
+      "SHIPKEY": "3E2279",
+      "EMAIL": "gtju@kssfleet.com"
+    },
+    {
+      "SHIPNAME": "GAS KAISERIN",
+      "SHIPKEY": "3E2302",
+      "EMAIL": "gtka@kssfleet.com"
+    },
+    {
+      "SHIPNAME": "GAS POWER",
+      "SHIPKEY": "3EVE2",
+      "EMAIL": "gtpo@kssfleet.com"
+    },
+    {
+      "SHIPNAME": "GAS QUANTUM",
+      "SHIPKEY": "3FUO4",
+      "EMAIL": "gtqu@kssfleet.com"
+    },
+    {
+      "SHIPNAME": "GAS STAR",
+      "SHIPKEY": "3FJI5",
+      "EMAIL": "gtst@kssfleet.com"
+    },
+    {
+      "SHIPNAME": "GAS SUMMIT",
+      "SHIPKEY": "3FAW3",
+      "EMAIL": "gtsu@kssfleet.com"
+    },
+    {
+      "SHIPNAME": "GAS UTOPIA",
+      "SHIPKEY": "3EXG8",
+      "EMAIL": "gtut@kssfleet.com"
+    },
+    {
+      "SHIPNAME": "GAS VENUS",
+      "SHIPKEY": "3EKX",
+      "EMAIL": "gtve@kssfleet.com"
+    },
+    {
+      "SHIPNAME": "GAS WISDOM",
+      "SHIPKEY": "H9CC",
+      "EMAIL": "gtwi@kssfleet.com"
+    },
+    {
+      "SHIPNAME": "GAS YOUNG",
+      "SHIPKEY": "3EYK6",
+      "EMAIL": "gtyo@kssfleet.com"
+    },
+    {
+      "SHIPNAME": "GAS ZENITH",
+      "SHIPKEY": "3EDJ",
+      "EMAIL": "gtze@kssfleet.com"
+    },
+    {
+      "SHIPNAME": "HARMONY CHEMIST",
+      "SHIPKEY": "H9FO",
+      "EMAIL": "cthc@kssfleet.com"
+    },
+    {
+      "SHIPNAME": "SAVONETTA SUN",
+      "SHIPKEY": "3E2694",
+      "EMAIL": "ctss@kssfleet.com"
+    },
+    {
+      "SHIPNAME": "JOY CHEMIST",
+      "SHIPKEY": "3EVI5",
+      "EMAIL": "ctjc@kssfleet.com"
+    }
+  ],
+  "HANARO": [
+    {
+      "SHIPNAME": "PHOENIX NEREID",
+      "SHIPKEY": "3EWP4",
+      "EMAIL": "phoenixnereid@sksat.kr"
+    },
+    {
+      "SHIPNAME": "SEA DIAMOND",
+      "SHIPKEY": "V7PI4",
+      "EMAIL": "seadiamond1@sksat.kr"
+    },
+    {
+      "SHIPNAME": "SEA EMPIRE",
+      "SHIPKEY": "3FNP9",
+      "EMAIL": "seaempire1@sksat.kr"
+    },
+    {
+      "SHIPNAME": "SEA HOPE",
+      "SHIPKEY": "3FYZ9",
+      "EMAIL": "seahope1@sksat.kr"
+    },
+    {
+      "SHIPNAME": "SEA OPAL",
+      "SHIPKEY": "3FBP6",
+      "EMAIL": "seaopal1@sksat.kr"
+    },
+    {
+      "SHIPNAME": "SEA ORION",
+      "SHIPKEY": "D7DU",
+      "EMAIL": "seaorion@sksat.kr"
+    },
+    {
+      "SHIPNAME": "SEA SAPPHIRE",
+      "SHIPKEY": "3EYH2",
+      "EMAIL": "seasapphire1@sksat.kr"
+    },
+    {
+      "SHIPNAME": "SEA TOPAZ",
+      "SHIPKEY": "DSQY8",
+      "EMAIL": "seatopaz1@sksat.kr"
+    },
+    {
+      "SHIPNAME": "SEN TREASURE",
+      "SHIPKEY": "3FGM6",
+      "EMAIL": "sentreasure@sksat.kr"
+    }
+  ],
+  "KSM": [
+    {
+      "SHIPNAME": "BON CHALLENGER",
+      "SHIPKEY": "D7JT",
+      "EMAIL": null
+    },
+    {
+      "SHIPNAME": "CNC RICH",
+      "SHIPKEY": "D7CR",
+      "EMAIL": null
+    },
+    {
+      "SHIPNAME": "CS ONSAN",
+      "SHIPKEY": "D7CM",
+      "EMAIL": "csonsan@sea-one.com"
+    },
+    {
+      "SHIPNAME": "DAEWOO DIAMOND",
+      "SHIPKEY": "3FRC",
+      "EMAIL": "daewoodiamond@sea-one.com"
+    },
+    {
+      "SHIPNAME": "NOEL",
+      "SHIPKEY": "D7AC",
+      "EMAIL": "noel@sea-one.com"
+    },
+    {
+      "SHIPNAME": "SEA CRYSTAL",
+      "SHIPKEY": "3FBD4",
+      "EMAIL": "3fbd4@sea-one.com"
+    }
+  ],
+  "WILHELMSEN": [
+    {
+      "SHIPNAME": "NEW FRONTIER1",
+      "SHIPKEY": "HOWM",
+      "EMAIL": "master.newfrontier1@ship.wilhelmsen.com"
+    },
+    {
+      "SHIPNAME": "NEW FRONTIER2",
+      "SHIPKEY": "3E2301",
+      "EMAIL": "master.newfrontier2@ship.wilhelmsen.com"
+    }
+  ],
+  "SNGLOBAL": [
+    {
+      "SHIPNAME": "SN OPAL",
+      "SHIPKEY": "D8SH",
+      "EMAIL": "snopal@sea-one.com"
+    },
+    {
+      "SHIPNAME": "SN SERENITY",
+      "SHIPKEY": "D5225",
+      "EMAIL": "snserenity@sea-one.com"
+    }
+  ],
+  "NJSM": [
+    {
+      "SHIPNAME": "JN CAMELLIA",
+      "SHIPKEY": "D7BB",
+      "EMAIL": "jncamellia@sea-one.com"
+    },
+    {
+      "SHIPNAME": "JN IRIS",
+      "SHIPKEY": "D7BX",
+      "EMAIL": "jniris@sea-one.com"
+    },
+    {
+      "SHIPNAME": "JN NEPTUNE",
+      "SHIPKEY": "D7VY",
+      "EMAIL": "jnneptune@sea-one.com"
+    }
+  ],
+  "MEGALINE": [
+    {
+      "SHIPNAME": "MEGA TRUST",
+      "SHIPKEY": "DSQH4",
+      "EMAIL": "megatrust@sea-one.com"
+    },
+    {
+      "SHIPNAME": "MEGA PASSION",
+      "SHIPKEY": "DSQU2",
+      "EMAIL": "megapassion@sea-one.com"
+    }
+  ],
+  "KORINSTAR": [
+    {
+      "SHIPNAME": "KS ADONIS",
+      "SHIPKEY": "D7ST",
+      "EMAIL": "ksad@sksat.kr"
+    },
+    {
+      "SHIPNAME": "KS CAMELLIA",
+      "SHIPKEY": "OUHH2",
+      "EMAIL": "ksca@sksat.kr"
+    },
+    {
+      "SHIPNAME": "KS GRACE",
+      "SHIPKEY": "3E2386",
+      "EMAIL": "ksgr@sksat.kr"
+    },
+    {
+      "SHIPNAME": "POLARIS",
+      "SHIPKEY": "DSQN4",
+      "EMAIL": "polaris@sksat.kr"
+    }
+  ],
+  "FAIR": [
+    {
+      "SHIPNAME": "DONGBANG GIANT NO.1",
+      "SHIPKEY": "DSOU8",
+      "EMAIL": "dongbang.giant1@sea-one.com"
+    },
+    {
+      "SHIPNAME": "DONGBANG GIANT NO.2",
+      "SHIPKEY": "DSPS9",
+      "EMAIL": "dongbanggiant2@sea-one.com"
+    },
+    {
+      "SHIPNAME": "DONGBANG GIANT NO.5",
+      "SHIPKEY": "DSMC3",
+      "EMAIL": "dongbang.giant5@sea-one.com"
+    },
+    {
+      "SHIPNAME": "DONGHAE STAR",
+      "SHIPKEY": "3FNX4",
+      "EMAIL": null
+    },
+    {
+      "SHIPNAME": "HANSUNG INCHEON",
+      "SHIPKEY": "9910366",
+      "EMAIL": null
+    },
+    {
+      "SHIPNAME": "KOOKYANG EXPRESS",
+      "SHIPKEY": "DSRC7",
+      "EMAIL": null
+    },
+    {
+      "SHIPNAME": "KOOKYANG SINGAPORE",
+      "SHIPKEY": "DSRH5",
+      "EMAIL": null
+    }
+  ],
+  "SHINSUNG": [
+    {
+      "SHIPNAME": "SHINSUNG ACCORD",
+      "SHIPKEY": "D7BY",
+      "EMAIL": "s.accord@sksat.kr"
+    },
+    {
+      "SHIPNAME": "SHINSUNG BRIGHT",
+      "SHIPKEY": "D9YB",
+      "EMAIL": "s.bright@sksat.kr"
+    },
+    {
+      "SHIPNAME": "SHINSUNG EVER",
+      "SHIPKEY": "DSRD4",
+      "EMAIL": null
+    }
+  ],
+  "BEOMJOO": [
+    {
+      "SHIPNAME": "PANCON BRIDGE",
+      "SHIPKEY": "D7XB",
+      "EMAIL": "pbrg@panconship.co.kr"
+    },
+    {
+      "SHIPNAME": "PANCON CHAMPION",
+      "SHIPKEY": "D7SP",
+      "EMAIL": "pchm@panconship.co.kr"
+    },
+    {
+      "SHIPNAME": "PANCON GLORY",
+      "SHIPKEY": "DSRI4",
+      "EMAIL": "pglo@panconship.co.kr"
+    },
+    {
+      "SHIPNAME": "PANCON HARMONY",
+      "SHIPKEY": "D7UY",
+      "EMAIL": "phar@panconship.co.kr"
+    },
+    {
+      "SHIPNAME": "PANCON SUCCESS",
+      "SHIPKEY": "DSRI7",
+      "EMAIL": "psuc@panconship.co.kr"
+    },
+    {
+      "SHIPNAME": "PANCON SUNSHINE",
+      "SHIPKEY": "D7CO",
+      "EMAIL": "psun@panconship.co.kr"
+    },
+    {
+      "SHIPNAME": "PANCON VICTORY",
+      "SHIPKEY": "D7CC",
+      "EMAIL": "pvic@panconship.co.kr"
+    }
+  ],
+  "JOONGANG": [
+    {
+      "SHIPNAME": "GLAD YOUNG",
+      "SHIPKEY": "V7A2922",
+      "EMAIL": "jaglad@sea-one.com"
+    },
+    {
+      "SHIPNAME": "SOUND YOUNG",
+      "SHIPKEY": "V7A2923",
+      "EMAIL": "jasound@sea-one.com"
+    },
+    {
+      "SHIPNAME": "YOUNG GLORY",
+      "SHIPKEY": "D7ON",
+      "EMAIL": "jaglory@sea-one.com"
+    },
+    {
+      "SHIPNAME": "YOUNG HARMONY",
+      "SHIPKEY": "D7LO",
+      "EMAIL": "jaharmony@sea-one.com"
+    },
+    {
+      "SHIPNAME": "YOUNG SPIRIT",
+      "SHIPKEY": "8101752",
+      "EMAIL": "jaspirit@sea-one.com"
+    }
+  ],
+  "SINOKOR": [
+    {
+      "SHIPNAME": "BALTIC WEST",
+      "SHIPKEY": "V7A2515",
+      "EMAIL": "balticwest@amosconnect.com"
+    },
+    {
+      "SHIPNAME": "OCEAN CARRIER",
+      "SHIPKEY": "V7AP8",
+      "EMAIL": "oceancarrier@sea-one.com"
+    },
+    {
+      "SHIPNAME": "SAWASDEE SUNRISE",
+      "SHIPKEY": "V7A2815",
+      "EMAIL": "sawasdeesunrise@sea-one.com"
+    }
+  ],
+  "LEESHIPPING": [
+    {
+      "SHIPNAME": "RABIGH SUNSHINE",
+      "SHIPKEY": "3ESS6",
+      "EMAIL": "r.sunshine@sea-one.com"
+    },
+    {
+      "SHIPNAME": "BUENA CONFIANZA",
+      "SHIPKEY": "3FHE7",
+      "EMAIL": "b.confianza@sea-one.com"
+    }
+  ],
+  "HANGANG": [
+    {
+      "SHIPNAME": "GOLDEN MAPLE",
+      "SHIPKEY": "D7AY",
+      "EMAIL": "goldenmaple@sksat.kr"
+    },
+    {
+      "SHIPNAME": "MAPLE HARBOUR",
+      "SHIPKEY": "D7DJ",
+      "EMAIL": "mapleharbour@sksat.kr"
+    },
+    {
+      "SHIPNAME": "MAPLE MARINA",
+      "SHIPKEY": "D7FH",
+      "EMAIL": "maple_marina@skyfile.com"
+    }
+  ],
+  "SEONGHO": [
+    {
+      "SHIPNAME": "NEW SILVER",
+      "SHIPKEY": "D8SV",
+      "EMAIL": "n.silver@arionmail.com"
+    },
+    {
+      "SHIPNAME": "NEW STAR",
+      "SHIPKEY": "V00001",
+      "EMAIL": "n.star@arionmail.com"
+    },
+    {
+      "SHIPNAME": "SEONGHO ACE",
+      "SHIPKEY": "DSQJ6",
+      "EMAIL": "s.ace@arionmail.com"
+    },
+    {
+      "SHIPNAME": "SH OLIVIA",
+      "SHIPKEY": "3E2137",
+      "EMAIL": "sh.olivia@sea-one.com"
+    },
+    {
+      "SHIPNAME": "SH VENUS",
+      "SHIPKEY": "3E2114",
+      "EMAIL": "sh.venus@sea-one.com"
+    }
+  ],
+  "PANBULK": [
+    {
+      "SHIPNAME": "RIPLEY PINNACLE",
+      "SHIPKEY": "5LOP5",
+      "EMAIL": null
+    },
+    {
+      "SHIPNAME": "RIPLEY PIONEER",
+      "SHIPKEY": "5LGU2",
+      "EMAIL": "rpioneer@sunavfleet.com"
+    },
+    {
+      "SHIPNAME": "RIPLEY PRIDE",
+      "SHIPKEY": "VTUN",
+      "EMAIL": "rpride@sunavfleet.com"
+    },
+    {
+      "SHIPNAME": "RIPLEY PROGRESS",
+      "SHIPKEY": "AURJ",
+      "EMAIL": "master.ripleyprogress@stationsatcommail.com"
+    },
+    {
+      "SHIPNAME": "RIPLEY PROSPERITY",
+      "SHIPKEY": "5LDH4",
+      "EMAIL": "rprosperity@sunavfleet.com"
+    }
+  ],
+  "WOCEAN": [
+    {
+      "SHIPNAME": "WOOHYUN STAR",
+      "SHIPKEY": "3FRW5",
+      "EMAIL": "whstar@woohyunshpg.co.kr"
+    },
+    {
+      "SHIPNAME": "WOOHYUN SKY",
+      "SHIPKEY": "D7XE",
+      "EMAIL": "whsky@woohyunshpg.co.kr"
+    },
+    {
+      "SHIPNAME": "WOOHYUN HOPE",
+      "SHIPKEY": "DSQQ4",
+      "EMAIL": "whhope@woohyunshpg.co.kr"
+    },
+    {
+      "SHIPNAME": "WOOHYUN GREEN",
+      "SHIPKEY": "DSRA9",
+      "EMAIL": "whgreen@woohyunshpg.co.kr"
+    }
+  ],
+  "GFSM": [
+    {
+      "SHIPNAME": "DAESAN CHEMI",
+      "SHIPKEY": "DSMB2",
+      "EMAIL": "daesanchemi@arionmail.com"
+    },
+    {
+      "SHIPNAME": "ONSAN CHEMI",
+      "SHIPKEY": "DSRH6",
+      "EMAIL": "onsanchemi@sea-one.com"
+    },
+    {
+      "SHIPNAME": "THAI CHEMI",
+      "SHIPKEY": "V7A5556",
+      "EMAIL": "thaichemi@sea-one.com"
+    },
+    {
+      "SHIPNAME": "BANGKOK CHEMI",
+      "SHIPKEY": "V7A5809",
+      "EMAIL": "bangkokchemi@sea-one.com"
+    }
+  ],
+  "TMS": [
+    {
+      "SHIPNAME": "GNS HARVEST",
+      "SHIPKEY": "3ELB7",
+      "EMAIL": "gnsharvest@bluewavemail.com"
+    },
+    {
+      "SHIPNAME": "GNS HARMONY",
+      "SHIPKEY": "V7QK7",
+      "EMAIL": "gnsharmony@arionmail.com"
+    },
+    {
+      "SHIPNAME": "GNS HOPE",
+      "SHIPKEY": "D8BK",
+      "EMAIL": null
+    }
+  ],
+  "SONGA": [
+    {
+      "SHIPNAME": "SONGA PUMA",
+      "SHIPKEY": "D5YU9",
+      "EMAIL": "master.songa-puma@songaship.com"
+    },
+    {
+      "SHIPNAME": "SONGA SAPPHIRE",
+      "SHIPKEY": "9HA4873",
+      "EMAIL": "master.songa-sapphire@songaship.com"
+    }
+  ],
+  "GLOVIS": [
+    {
+      "SHIPNAME": "GLOVIS CARDINAL",
+      "SHIPKEY": "D7GV",
+      "EMAIL": "g_cardinal@glovis.sea-one.com"
+    },
+    {
+      "SHIPNAME": "GLOVIS COMPANION",
+      "SHIPKEY": "5LBH4",
+      "EMAIL": "?g_companion@glovis.sea-one.com"
+    },
+    {
+      "SHIPNAME": "GLOVIS SILVER",
+      "SHIPKEY": "D7FY",
+      "EMAIL": "g_silver@glovis.sea-one.com?"
+    },
+    {
+      "SHIPNAME": "GLOVIS SONIC",
+      "SHIPKEY": "V7ML7",
+      "EMAIL": "?g_sonic@glovis.sea-one.com"
+    },
+    {
+      "SHIPNAME": "GLOVIS SUNLIGHT",
+      "SHIPKEY": "V7JP5",
+      "EMAIL": "?g_sunlight@glovis.sea-one.com"
+    },
+    {
+      "SHIPNAME": "GLOVIS SUNRISE",
+      "SHIPKEY": "V7EO2",
+      "EMAIL": null
+    },
+    {
+      "SHIPNAME": "VL BREEZE",
+      "SHIPKEY": "5LEK3",
+      "EMAIL": "vl_breeze@glovis.sea-one.com"
+    }
+  ],
+  "SK_SHIPPING": [
+    {
+      "SHIPNAME": "C.GLORY",
+      "SHIPKEY": "3FQD4",
+      "EMAIL": null
+    },
+    {
+      "SHIPNAME": "SK_TEST1",
+      "SHIPKEY": "SKTEST1",
+      "EMAIL": null
+    }
+  ],
+  "PIL": [
+    {
+      "SHIPNAME": "KOTA AZAM",
+      "SHIPKEY": "S6BL",
+      "EMAIL": "master.kotaazam@orillamail.com "
+    },
+    {
+      "SHIPNAME": "KOTA CABAR",
+      "SHIPKEY": "9V6247",
+      "EMAIL": "master.kotacabar@fleetmail.inmarsat.com"
+    },
+    {
+      "SHIPNAME": "KOTA CAHAYA",
+      "SHIPKEY": "9V7831",
+      "EMAIL": "master.kotacahaya@fleetmail.inmarsat.com"
+    },
+    {
+      "SHIPNAME": "KOTA CANTIK",
+      "SHIPKEY": "9V7835",
+      "EMAIL": "master.kotacantik@fleetmail.inmarsat.com"
+    },
+    {
+      "SHIPNAME": "KOTA CARUM",
+      "SHIPKEY": "9V7838",
+      "EMAIL": "master.kotacarum@fleetmail.inmarsat.com"
+    },
+    {
+      "SHIPNAME": "KOTA CEMPAKA",
+      "SHIPKEY": "9VLP3",
+      "EMAIL": "master.kotacempaka@fleetmail.inmarsat.com"
+    },
+    {
+      "SHIPNAME": "KOTA CEPAT",
+      "SHIPKEY": "9VLP8",
+      "EMAIL": "master.kotacepat@fleetmail.inmarsat.com"
+    },
+    {
+      "SHIPNAME": "KOTA DAHLIA",
+      "SHIPKEY": "9VED9",
+      "EMAIL": "master.kotadahlia@fleetmail.inmarsat.com "
+    },
+    {
+      "SHIPNAME": "KOTA DUNIA",
+      "SHIPKEY": "9V7847",
+      "EMAIL": "master.kotadunia@orillamail.com"
+    },
+    {
+      "SHIPNAME": "KOTA DUTA",
+      "SHIPKEY": "9V8167",
+      "EMAIL": "master.kotaduta@orillamail.com"
+    },
+    {
+      "SHIPNAME": "KOTA GABUNG",
+      "SHIPKEY": "9V7465",
+      "EMAIL": "kotagabung@fleetmail.inmarsat.com"
+    },
+    {
+      "SHIPNAME": "KOTA GADANG",
+      "SHIPKEY": "9V7643",
+      "EMAIL": "master.kotagadang@fleetmail.inmarsat.com"
+    },
+    {
+      "SHIPNAME": "KOTA GANDING",
+      "SHIPKEY": "9V7660",
+      "EMAIL": "master.kotaganding@fleetmail.inmarsat.com"
+    },
+    {
+      "SHIPNAME": "KOTA GAYA",
+      "SHIPKEY": "9V7466",
+      "EMAIL": "master.kotagaya@fleetmail.inmarsat.com> "
+    },
+    {
+      "SHIPNAME": "KOTA HAKIM",
+      "SHIPKEY": "9V8257",
+      "EMAIL": "master.kotahakim@fleetmail.inmarsat.com"
+    },
+    {
+      "SHIPNAME": "KOTA HALUS",
+      "SHIPKEY": "9V8258",
+      "EMAIL": "master.kotahalus@orillamail.com"
+    },
+    {
+      "SHIPNAME": "KOTA HANDAL",
+      "SHIPKEY": "9V7329",
+      "EMAIL": "master.kotahandal@fleetmail.inmarsat.com"
+    },
+    {
+      "SHIPNAME": "KOTA HAPAS",
+      "SHIPKEY": "9V8259",
+      "EMAIL": "master.kotahapas@fleetmail.inmarsat.com"
+    },
+    {
+      "SHIPNAME": "KOTA HARUM",
+      "SHIPKEY": "9VFF8",
+      "EMAIL": "master.kotaharum@orillamail.com"
+    },
+    {
+      "SHIPNAME": "KOTA HENING",
+      "SHIPKEY": "9V7332",
+      "EMAIL": "master.kotahening@fleetmail.inmarsat.com"
+    },
+    {
+      "SHIPNAME": "KOTA HIDAYAH",
+      "SHIPKEY": "9VAL4",
+      "EMAIL": "master.kotahidayah@fleetmail.inmarsat.com"
+    },
+    {
+      "SHIPNAME": "KOTA JAYA",
+      "SHIPKEY": "9V7333",
+      "EMAIL": "master.kotajaya@fleetmail.inmarsat.com"
+    },
+    {
+      "SHIPNAME": "KOTA JOHAN",
+      "SHIPKEY": "VRQR6",
+      "EMAIL": "master.kotajohan@fleetmail.inmarsat.com"
+    },
+    {
+      "SHIPNAME": "KOTA KAMIL",
+      "SHIPKEY": "9VJK6",
+      "EMAIL": "master.kotakamil@orillamail.com"
+    },
+    {
+      "SHIPNAME": "KOTA KARIM",
+      "SHIPKEY": "9V7839",
+      "EMAIL": "master.kotakarim@fleetmail.inmarsat.com"
+    },
+    {
+      "SHIPNAME": "KOTA KAYA",
+      "SHIPKEY": "3ENH5",
+      "EMAIL": "master.kotakaya@fleetmail.inmarsat.com"
+    },
+    {
+      "SHIPNAME": "KOTA LAGU",
+      "SHIPKEY": "9V7258",
+      "EMAIL": "master.kotalagu@fleetmail.inmarsat.com"
+    },
+    {
+      "SHIPNAME": "KOTA LAMBAI",
+      "SHIPKEY": "9VFX5",
+      "EMAIL": "master.kotalambai@orillamail.com"
+    },
+    {
+      "SHIPNAME": "KOTA LAMBANG",
+      "SHIPKEY": "9VFX9",
+      "EMAIL": "master.kotalambang@fleetmail.inmarsat.com"
+    },
+    {
+      "SHIPNAME": "KOTA LARIS",
+      "SHIPKEY": "9V7259",
+      "EMAIL": "master.kotalaris@fleetmail.inmarsat.com"
+    },
+    {
+      "SHIPNAME": "KOTA LAWA",
+      "SHIPKEY": "9V7472",
+      "EMAIL": "master.kotalawa@orillamail.com"
+    },
+    {
+      "SHIPNAME": "KOTA LAYANG",
+      "SHIPKEY": "9V7337",
+      "EMAIL": "master.kotalayang@orillamail.com"
+    },
+    {
+      "SHIPNAME": "KOTA LEGIT",
+      "SHIPKEY": "9V8481",
+      "EMAIL": "master.kotalegit@fleetmail.inmarsat.com"
+    },
+    {
+      "SHIPNAME": "KOTA LEKAS",
+      "SHIPKEY": "9V8480",
+      "EMAIL": "master.kotalekas@fleetmail.inmarsat.com"
+    },
+    {
+      "SHIPNAME": "KOTA LEMBAH",
+      "SHIPKEY": "9V7665",
+      "EMAIL": "master.kotalembah@orillamail.com"
+    },
+    {
+      "SHIPNAME": "KOTA LESTARI",
+      "SHIPKEY": "9V2116",
+      "EMAIL": "master.kotalestari@fleetmail.inmarsat.com"
+    },
+    {
+      "SHIPNAME": "KOTA LIMA",
+      "SHIPKEY": "D5JI9",
+      "EMAIL": "vsl_127@danaos.gr"
+    },
+    {
+      "SHIPNAME": "KOTA LOCENG",
+      "SHIPKEY": "9V7667",
+      "EMAIL": "master.kotaloceng@fleetmail.inmarsat.com"
+    },
+    {
+      "SHIPNAME": "KOTA LUKIS",
+      "SHIPKEY": "VRSN8",
+      "EMAIL": "master.kotalukis@fleetmail.inmarsat.com"
+    },
+    {
+      "SHIPNAME": "KOTA LUMAYAN",
+      "SHIPKEY": "VRSO2",
+      "EMAIL": "master.kotalumayan@orillamail.com"
+    },
+    {
+      "SHIPNAME": "KOTA LUMBA",
+      "SHIPKEY": "VRSO3",
+      "EMAIL": "master.kotalumba@fleetmail.inmarsat.com"
+    },
+    {
+      "SHIPNAME": "KOTA MACHAN",
+      "SHIPKEY": "9V9976",
+      "EMAIL": "master.kotamachan@orillamail.com"
+    },
+    {
+      "SHIPNAME": "KOTA MAKMUR",
+      "SHIPKEY": "VRRC2",
+      "EMAIL": "master.kotamakmur@fleetmail.inmarsat.com"
+    },
+    {
+      "SHIPNAME": "KOTA MANIS",
+      "SHIPKEY": "9V9975",
+      "EMAIL": "master.kotamanis@fleetmail.inmarsat.com"
+    },
+    {
+      "SHIPNAME": "KOTA MEGAH",
+      "SHIPKEY": "9V9978",
+      "EMAIL": "master.kotamegah@orillamail.com"
+    },
+    {
+      "SHIPNAME": "KOTA NABIL",
+      "SHIPKEY": "9VFX3",
+      "EMAIL": "master.kotanabil@fleetmail.inmarsat.com"
+    },
+    {
+      "SHIPNAME": "KOTA NAGA",
+      "SHIPKEY": "9VFX4",
+      "EMAIL": "master.kotanaga@fleetmail.inmarsat.com "
+    },
+    {
+      "SHIPNAME": "KOTA NALURI",
+      "SHIPKEY": "9VHP2",
+      "EMAIL": "master.kotanaluri@fleetmail.inmarsat.com "
+    },
+    {
+      "SHIPNAME": "KOTA NANHAI",
+      "SHIPKEY": "9VHM9",
+      "EMAIL": "master.kotananhai@orillamail.com "
+    },
+    {
+      "SHIPNAME": "KOTA NASRAT",
+      "SHIPKEY": "9V7346",
+      "EMAIL": "master.kotanasrat@fleetmail.inmarsat.com "
+    },
+    {
+      "SHIPNAME": "KOTA NAZAR",
+      "SHIPKEY": "9V8600",
+      "EMAIL": "master.kotanazar@fleetmail.inmarsat.com"
+    },
+    {
+      "SHIPNAME": "KOTA NAZIM",
+      "SHIPKEY": "9VEY4",
+      "EMAIL": "master.kotanazim@fleetmail.inmarsat.com "
+    },
+    {
+      "SHIPNAME": "KOTA NEBULA",
+      "SHIPKEY": "9V6396",
+      "EMAIL": "master.kotanebula@fleetmail.inmarsat.com"
+    },
+    {
+      "SHIPNAME": "KOTA NEKAD",
+      "SHIPKEY": "H3HS",
+      "EMAIL": "master.kotanekad@orillamail.com"
+    },
+    {
+      "SHIPNAME": "KOTA NILAM",
+      "SHIPKEY": "3EZQ8",
+      "EMAIL": "master.kotanilam@fleetmail.inmarsat.com"
+    },
+    {
+      "SHIPNAME": "KOTA NIPAH",
+      "SHIPKEY": "9V9332",
+      "EMAIL": "master.kotanipah@orillamail.com "
+    },
+    {
+      "SHIPNAME": "KOTA PAHLAWAN",
+      "SHIPKEY": "9V5293",
+      "EMAIL": "master.kotapahlawan@orillamail.com"
+    },
+    {
+      "SHIPNAME": "KOTA PURI",
+      "SHIPKEY": "VRSB5",
+      "EMAIL": "master.kotapuri@orillamail.com"
+    },
+    {
+      "SHIPNAME": "KOTA PUSAKA",
+      "SHIPKEY": "VRSB2",
+      "EMAIL": "master.kotapusaka@orillamail.com"
+    },
+    {
+      "SHIPNAME": "KOTA RAHMAT",
+      "SHIPKEY": "9VEY2",
+      "EMAIL": "master.kotarahmat@orillamail.com"
+    },
+    {
+      "SHIPNAME": "KOTA RAJA",
+      "SHIPKEY": "S6SS",
+      "EMAIL": "master.kotaraja@orillamail.com"
+    },
+    {
+      "SHIPNAME": "KOTA RAJIN",
+      "SHIPKEY": "S6BH6",
+      "EMAIL": "master.kotarajin@orillamail.com"
+    },
+    {
+      "SHIPNAME": "KOTA RAKAN",
+      "SHIPKEY": "9V7348",
+      "EMAIL": "master.kotarakan@fleetmail.inmarsat.com"
+    },
+    {
+      "SHIPNAME": "KOTA RAKYAT",
+      "SHIPKEY": "9VJK5",
+      "EMAIL": "master.kotarakyat@orillamail.com"
+    },
+    {
+      "SHIPNAME": "KOTA RANCAK",
+      "SHIPKEY": "S6BH8",
+      "EMAIL": "master.kotarancak@orillamail.com"
+    },
+    {
+      "SHIPNAME": "KOTA RATNA",
+      "SHIPKEY": "S6TI",
+      "EMAIL": "master.kotaratna@orillamail.com"
+    },
+    {
+      "SHIPNAME": "KOTA RATU",
+      "SHIPKEY": "S6ST",
+      "EMAIL": "master.kotaratu@orillamail.com"
+    },
+    {
+      "SHIPNAME": "KOTA RESTU",
+      "SHIPKEY": "9V8166",
+      "EMAIL": "master.kotarestu@orillamail.com"
+    },
+    {
+      "SHIPNAME": "KOTA RIA",
+      "SHIPKEY": "9VJK4",
+      "EMAIL": "master.kotaria@orillamail.com"
+    },
+    {
+      "SHIPNAME": "KOTA RUKUN",
+      "SHIPKEY": "S6TJ",
+      "EMAIL": "master.kotarukun@orillamail.com"
+    },
+    {
+      "SHIPNAME": "KOTA SAHABAT",
+      "SHIPKEY": "9V2122",
+      "EMAIL": "master.kotasahabat@fleetmail.inmarsat.com"
+    },
+    {
+      "SHIPNAME": "KOTA SALAM",
+      "SHIPKEY": "9V2123",
+      "EMAIL": "master.kotasalam@fleetmail.inmarsat.com"
+    },
+    {
+      "SHIPNAME": "KOTA SANTOS",
+      "SHIPKEY": "D5WO7",
+      "EMAIL": "vsl_132@danaos.gr"
+    },
+    {
+      "SHIPNAME": "KOTA SATRIA",
+      "SHIPKEY": "9V2124",
+      "EMAIL": "master.kotasatria@orillamail.com"
+    },
+    {
+      "SHIPNAME": "KOTA SEGAR",
+      "SHIPKEY": "9V2125",
+      "EMAIL": "master.kotasegar@fleetmail.inmarsat.com"
+    },
+    {
+      "SHIPNAME": "KOTA SEJARAH",
+      "SHIPKEY": "9V2126",
+      "EMAIL": "master.kotasejarah@orillamail.com"
+    },
+    {
+      "SHIPNAME": "KOTA SEJATI",
+      "SHIPKEY": "9V2127",
+      "EMAIL": "master.kotasejati@orillamail.com"
+    },
+    {
+      "SHIPNAME": "KOTA SELAMAT",
+      "SHIPKEY": "9V2128",
+      "EMAIL": "master.kotaselamat@orillamail.com"
+    },
+    {
+      "SHIPNAME": "KOTA SEMPENA",
+      "SHIPKEY": "9V2129",
+      "EMAIL": "master.kotasempena@orillamail.com"
+    },
+    {
+      "SHIPNAME": "KOTA SETIA",
+      "SHIPKEY": "9V2130",
+      "EMAIL": "master.kotasetia@orillamail.com"
+    },
+    {
+      "SHIPNAME": "KOTA SINGA",
+      "SHIPKEY": "9V2131",
+      "EMAIL": "master.kotasinga@orillamail.com"
+    },
+    {
+      "SHIPNAME": "KOTA SURIA",
+      "SHIPKEY": "9V2132",
+      "EMAIL": "master.kotasuria@fleetmail.inmarsat.com"
+    },
+    {
+      "SHIPNAME": "KOTA TEMA",
+      "SHIPKEY": "9V9309",
+      "EMAIL": "kota.tema@rclfleet.com"
+    },
+    {
+      "SHIPNAME": "KOTA TENAGA",
+      "SHIPKEY": "S6AL7",
+      "EMAIL": "master.kotatenaga@orillamail.com"
+    },
+    {
+      "SHIPNAME": "SALAM MAJU",
+      "SHIPKEY": "9M2383",
+      "EMAIL": "master.salammaju@orillamail.com"
+    },
+    {
+      "SHIPNAME": "SELATAN DAMAI",
+      "SHIPKEY": "YBQR2",
+      "EMAIL": "master.selatandamai@orillamail.com"
+    }
+  ],
+  "HOS": [
+    {
+      "SHIPNAME": "VL BRILLIANT",
+      "SHIPKEY": "H9VU",
+      "EMAIL": "vl_brilliant@glovis.sea-one.com"
+    }
+  ],
+  "ES_MARITIME": [
+    {
+      "SHIPNAME": "SEA CRYSTAL",
+      "SHIPKEY": "3FBD4",
+      "EMAIL": "3fbd4@sea-one.com"
+    }
+  ],
+  "YOUHA_MARINE": [
+    {
+      "SHIPNAME": "CS SUMMER",
+      "SHIPKEY": "3EMU8",
+      "EMAIL": "CSSUMMER@sea-one.com"
+    },
+    {
+      "SHIPNAME": "CS BREEZE",
+      "SHIPKEY": "3E3975",
+      "EMAIL": "CSBREEZE@sea-one.com"
+    },
+    {
+      "SHIPNAME": "CS HANA",
+      "SHIPKEY": "3E2119",
+      "EMAIL": "CSHANA@sea-one.com"
+    }
+  ],
+  "KLCSM": [
+    {
+      "SHIPNAME": "ADONIS",
+      "SHIPKEY": "3EGH4",
+      "EMAIL": "adonis@sea-one.com"
+    },
+    {
+      "SHIPNAME": "GLOBAL BRAVE",
+      "SHIPKEY": "3FHX4",
+      "EMAIL": "globalbrave@sea-one.com"
+    },
+    {
+      "SHIPNAME": "GLOBAL FRONTIER",
+      "SHIPKEY": "H3TS",
+      "EMAIL": "globalfrontier@sea-one.com"
+    },
+    {
+      "SHIPNAME": "GLOBAL GENESIS",
+      "SHIPKEY": "3FLO2",
+      "EMAIL": "globalgenesis@sea-one.com"
+    },
+    {
+      "SHIPNAME": "GLOBAL HOPE",
+      "SHIPKEY": "3EZY7",
+      "EMAIL": "globalhope@sea-one.com"
+    },
+    {
+      "SHIPNAME": "K.ACACIA",
+      "SHIPKEY": "3FQY9",
+      "EMAIL": "acacia@sea-one.com"
+    },
+    {
+      "SHIPNAME": "K.ASIAN BEAUTY",
+      "SHIPKEY": "3EUH5",
+      "EMAIL": "kasb@sea-one.com"
+    },
+    {
+      "SHIPNAME": "K.ASTER",
+      "SHIPKEY": "3FUB2",
+      "EMAIL": "k.aster@sea-one.com"
+    },
+    {
+      "SHIPNAME": "K.DAPHNE",
+      "SHIPKEY": "3EZF9",
+      "EMAIL": "k.daphne@sea-one.com"
+    },
+    {
+      "SHIPNAME": "K.FREESIA",
+      "SHIPKEY": "H3DP",
+      "EMAIL": "freesia@sea-one.com"
+    },
+    {
+      "SHIPNAME": "K.JASMINE",
+      "SHIPKEY": "3EPQ5",
+      "EMAIL": "jasmine@sea-one.com"
+    },
+    {
+      "SHIPNAME": "K.MUGUNGWHA",
+      "SHIPKEY": "3ETM6",
+      "EMAIL": "mugungwha@sea-one.com"
+    },
+    {
+      "SHIPNAME": "LAVENDER",
+      "SHIPKEY": "3FHG3",
+      "EMAIL": "lavender@sea-one.com"
+    },
+    {
+      "SHIPNAME": "ROSEMARY",
+      "SHIPKEY": "3FBU8",
+      "EMAIL": "rosemary@sea-one.com"
+    },
+    {
+      "SHIPNAME": "SM CHALLENGER",
+      "SHIPKEY": "V7TJ5",
+      "EMAIL": "smchallenger@sea-one.com"
+    },
+    {
+      "SHIPNAME": "SM DIAMOND",
+      "SHIPKEY": "3FIJ5",
+      "EMAIL": "smdiamond@sea-one.com"
+    },
+    {
+      "SHIPNAME": "SM DONGHAE",
+      "SHIPKEY": "3FLR8",
+      "EMAIL": "smdonghae2@sea-one.com"
+    },
+    {
+      "SHIPNAME": "SM DONGHAE 2",
+      "SHIPKEY": "3FMR6",
+      "EMAIL": "smdonghae@sea-one.com"
+    },
+    {
+      "SHIPNAME": "SM DRAGON",
+      "SHIPKEY": "3FJZ7",
+      "EMAIL": "smdragon@sea-one.com"
+    },
+    {
+      "SHIPNAME": "SM EAGLE",
+      "SHIPKEY": "3EMX3",
+      "EMAIL": "eagle@sea-one.com"
+    },
+    {
+      "SHIPNAME": "SM EMERALD",
+      "SHIPKEY": "3EHZ7",
+      "EMAIL": "smemerald@sea-one.com"
+    },
+    {
+      "SHIPNAME": "SM FALCON",
+      "SHIPKEY": "H3MW",
+      "EMAIL": "smfalcon@sea-one.com"
+    },
+    {
+      "SHIPNAME": "SM GEMINI 1",
+      "SHIPKEY": "3FYA6",
+      "EMAIL": "smgemini1@sea-one.com"
+    },
+    {
+      "SHIPNAME": "SM GEMINI2",
+      "SHIPKEY": "3FVP5",
+      "EMAIL": "smgemini2@sea-one.com"
+    },
+    {
+      "SHIPNAME": "SM HARMONY1",
+      "SHIPKEY": "V7A2878",
+      "EMAIL": "smharmony1@sea-one.com"
+    },
+    {
+      "SHIPNAME": "SM HARMONY2",
+      "SHIPKEY": "D7VO",
+      "EMAIL": "smharmony2@sea-one.com"
+    },
+    {
+      "SHIPNAME": "SM HEDLAND",
+      "SHIPKEY": "V7BW6",
+      "EMAIL": "smhedland@sea-one.com"
+    },
+    {
+      "SHIPNAME": "SM JEJU LNG1",
+      "SHIPKEY": "3FTI8",
+      "EMAIL": "smjejulng1@sea-one.com"
+    },
+    {
+      "SHIPNAME": "SM JEJU LNG2",
+      "SHIPKEY": "3ESH2",
+      "EMAIL": "smjejulng2@sea-one.com"
+    },
+    {
+      "SHIPNAME": "SM LION",
+      "SHIPKEY": "3EKG8",
+      "EMAIL": "smlion@sea-one.com"
+    },
+    {
+      "SHIPNAME": "SM NAVIGATOR",
+      "SHIPKEY": "3ESW6",
+      "EMAIL": "smnavigator@sea-one.com"
+    },
+    {
+      "SHIPNAME": "SM NEWORLEANS",
+      "SHIPKEY": "V7A2392",
+      "EMAIL": "smneworleans@sea-one.com"
+    },
+    {
+      "SHIPNAME": "SM OSPREY",
+      "SHIPKEY": "3ECA6",
+      "EMAIL": "smosprey@sea-one.com"
+    },
+    {
+      "SHIPNAME": "SM PUMA",
+      "SHIPKEY": "3END5",
+      "EMAIL": "smpuma@sea-one.com"
+    },
+    {
+      "SHIPNAME": "SM ROBERTS BANK",
+      "SHIPKEY": "V7A2565",
+      "EMAIL": "smrobertsbank@sea-one.com"
+    },
+    {
+      "SHIPNAME": "SM SAMCHEONPO",
+      "SHIPKEY": "V7A2310",
+      "EMAIL": "smsamcheonpo@sea-one.com"
+    },
+    {
+      "SHIPNAME": "SM SANTOS",
+      "SHIPKEY": "V7A2689",
+      "EMAIL": "smsantos@sea-one.com"
+    },
+    {
+      "SHIPNAME": "SM SEAHAWK",
+      "SHIPKEY": "3FLV3",
+      "EMAIL": "seahawk@sea-one.com"
+    },
+    {
+      "SHIPNAME": "SM TIGER",
+      "SHIPKEY": "3FEJ7",
+      "EMAIL": "smtiger@sea-one.com"
+    },
+    {
+      "SHIPNAME": "SM VENUS1",
+      "SHIPKEY": "3EQL8",
+      "EMAIL": "smvenus1@sea-one.com"
+    },
+    {
+      "SHIPNAME": "SM VENUS2",
+      "SHIPKEY": "3EZX3",
+      "EMAIL": "smvenus2@sea-one.com"
+    },
+    {
+      "SHIPNAME": "SM VISION",
+      "SHIPKEY": "3EJN6",
+      "EMAIL": "smvision@sea-one.com"
+    },
+    {
+      "SHIPNAME": "SM WHITE WHALE 1",
+      "SHIPKEY": "3FND8",
+      "EMAIL": "smwhitewhale1@sea-one.com"
+    },
+    {
+      "SHIPNAME": "SM WHITE WHALE 2",
+      "SHIPKEY": "3FCV5",
+      "EMAIL": "smwhitewhale2@sea-one.com"
+    },
+    {
+      "SHIPNAME": "WHITE ROSE",
+      "SHIPKEY": "3EEW7",
+      "EMAIL": "whiterose@sea-one.com"
+    }
+  ],
+  "HMM": [
+    {
+      "SHIPNAME": "HMM PROMISE",
+      "SHIPKEY": "V7VY7",
+      "EMAIL": "hpromise@hmms.co.kr"
+    },
+    {
+      "SHIPNAME": "HMM BLESSING",
+      "SHIPKEY": "V7JK6",
+      "EMAIL": "hblessing@hmms.co.kr"
+    }
+  ]
+}

@@ -38,7 +38,7 @@ app.post("/send_shipname", async (req, res) => {
     console.log("Received shipname:", shipname);
 
     try {
-        const data = await fetchLocalJsonFile('./ships_data.json');
+        const data = await fetchLocalJsonFile('./merged_ships_email.json');
         let found = false;
         for (let company in data) {
             for (let ship of data[company]) {
@@ -66,7 +66,7 @@ app.post("/send_company_name", async (req, res) => {
     console.log("Received company name:", ship_company);
 
     try {
-        const data = await fetchLocalJsonFile('./ships_data.json');
+        const data = await fetchLocalJsonFile('./merged_ships_email.json');
         if (data.hasOwnProperty(ship_company)) {
             const ships = data[ship_company];
             console.log("Ships found:", ships);
@@ -90,7 +90,7 @@ app.post('/get-token', async(req,res)=>{
 
 app.post("/send_all_ships", async(req, res)=>{
     try {
-        const data = await fetchLocalJsonFile('./ships_data.json')
+        const data = await fetchLocalJsonFile('./merged_ships_email.json')
             res.json(data);
 
     } catch (error){
@@ -123,7 +123,7 @@ app.post("/search_ship", async(req, res)=>{
     const shipname = req.body.ship
     const shipname_list = []
     try {
-        const data = await fetchLocalJsonFile('./ships_data.json');
+        const data = await fetchLocalJsonFile('./merged_ships_email.json');
         for (let company in data) {
             for (let ship of data[company]) {
                 if (ship.SHIPNAME.toLowerCase().includes(shipname.toLowerCase())) {

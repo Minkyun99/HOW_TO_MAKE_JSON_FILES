@@ -506,7 +506,8 @@
     },
     {
       "SHIPNAME": "PAN JASMINE",
-      "SHIPKEY": "V7VI5"
+      "SHIPKEY": "V7VI5",
+      "EMAIL": null
     },
     {
       "SHIPNAME": "PAN JOY",
@@ -732,7 +733,8 @@
     },
     {
       "SHIPNAME": "PAN PRIDE",
-      "SHIPKEY": "3FXC5"
+      "SHIPKEY": "3FXC5",
+      "EMAIL": null
     },
     {
       "SHIPNAME": "PAN SPIRIT",
@@ -746,7 +748,8 @@
   "STX": [
     {
       "SHIPNAME": "BK ALICE",
-      "SHIPKEY": "3ETW3"
+      "SHIPKEY": "3ETW3",
+      "EMAIL": null
     },
     {
       "SHIPNAME": "DL ACACIA",
@@ -762,7 +765,8 @@
     },
     {
       "SHIPNAME": "DL IVY",
-      "SHIPKEY": "3ETV"
+      "SHIPKEY": "3ETV",
+      "EMAIL": null
     },
     {
       "SHIPNAME": "DL JASMINE",
@@ -888,15 +892,18 @@
     },
     {
       "SHIPNAME": "LADY CEDROS",
-      "SHIPKEY": "DSQV8"
+      "SHIPKEY": "DSQV8",
+      "EMAIL": null
     },
     {
       "SHIPNAME": "PAN GLOD",
-      "SHIPKEY": "3FQI"
+      "SHIPKEY": "3FQI",
+      "EMAIL": null
     },
     {
       "SHIPNAME": "PAN SPIRIT",
-      "SHIPKEY": "HOZL"
+      "SHIPKEY": "HOZL",
+      "EMAIL": null
     },
     {
       "SHIPNAME": "SANG SHIN",
@@ -926,7 +933,8 @@
   "TAIKOON": [
     {
       "SHIPNAME": "CARIBBEAN1",
-      "SHIPKEY": "3FTT2"
+      "SHIPKEY": "3FTT2",
+      "EMAIL": null
     },
     {
       "SHIPNAME": "DM CONDOR",
@@ -1104,11 +1112,13 @@
   "KSM": [
     {
       "SHIPNAME": "BON CHALLENGER",
-      "SHIPKEY": "D7JT"
+      "SHIPKEY": "D7JT",
+      "EMAIL": null
     },
     {
       "SHIPNAME": "CNC RICH",
-      "SHIPKEY": "D7CR"
+      "SHIPKEY": "D7CR",
+      "EMAIL": null
     },
     {
       "SHIPNAME": "CS ONSAN",
@@ -1204,19 +1214,23 @@
     },
     {
       "SHIPNAME": "DONGHAE STAR",
-      "SHIPKEY": "3FNX4"
+      "SHIPKEY": "3FNX4",
+      "EMAIL": null
     },
     {
       "SHIPNAME": "HANSUNG INCHEON",
-      "SHIPKEY": "9910366"
+      "SHIPKEY": "9910366",
+      "EMAIL": null
     },
     {
       "SHIPNAME": "KOOKYANG EXPRESS",
-      "SHIPKEY": "DSRC7"
+      "SHIPKEY": "DSRC7",
+      "EMAIL": null
     },
     {
       "SHIPNAME": "KOOKYANG SINGAPORE",
-      "SHIPKEY": "DSRH5"
+      "SHIPKEY": "DSRH5",
+      "EMAIL": null
     }
   ],
   "SHINSUNG": [
@@ -1230,7 +1244,8 @@
     },
     {
       "SHIPNAME": "SHINSUNG EVER",
-      "SHIPKEY": "DSRD4"
+      "SHIPKEY": "DSRD4",
+      "EMAIL": null
     }
   ],
   "BEOMJOO": [
@@ -1348,7 +1363,8 @@
   "PANBULK": [
     {
       "SHIPNAME": "RIPLEY PINNACLE",
-      "SHIPKEY": "5LOP5"
+      "SHIPKEY": "5LOP5",
+      "EMAIL": null
     },
     {
       "SHIPNAME": "RIPLEY PIONEER",
@@ -1460,11 +1476,13 @@
   "SK_SHIPPING": [
     {
       "SHIPNAME": "C.GLORY",
-      "SHIPKEY": "3FQD4"
+      "SHIPKEY": "3FQD4",
+      "EMAIL": null
     },
     {
       "SHIPNAME": "SK_TEST1",
-      "SHIPKEY": "SKTEST1"
+      "SHIPKEY": "SKTEST1",
+      "EMAIL": null
     }
   ],
   "PIL": [

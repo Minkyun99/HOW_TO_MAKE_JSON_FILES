@@ -24,7 +24,8 @@
                 const response = await axios.post("/send_shipname", { shipname: shipname_value });
                 const shipname = response.data.SHIPNAME;
                 const shipkey = response.data.SHIPKEY;
-                console.log(shipname, shipkey)
+                const shipsmail = response.data.EMAIL
+                console.log(shipname, shipkey, shipsmail)
 
                 if (!shipname || !shipkey) {
                     console.log("Ship not found");
@@ -34,13 +35,16 @@
                     const shipkey_tr = document.createElement('tr');
                     const shipkey_td = document.createElement('td');
                     const shipname_td = document.createElement('td');
+                    const shipmail_td = document.createElement('td');
 
                     shipname_td.innerHTML = shipname;
                     shipkey_td.innerHTML = shipkey;
+                    shipmail_td.innerHTML = shipsmail;
 
                     company_table.appendChild(shipkey_tr);
                     shipkey_tr.appendChild(shipname_td);
                     shipkey_tr.appendChild(shipkey_td);
+                    shipkey_tr.appendChild(shipmail_td);
 
                     console.log("Found ship:", response.data);
                 }
@@ -84,6 +88,7 @@
                 const response = await axios.post("/send_shipname", { shipname: shipname_value });
                 const shipname = response.data.SHIPNAME;
                 const shipkey = response.data.SHIPKEY;
+                const shipsmail = response.data.EMAIL;
                 console.log(shipname, shipkey)
 
                 if (!shipname || !shipkey) {
@@ -94,13 +99,16 @@
                     const shipkey_tr = document.createElement('tr');
                     const shipkey_td = document.createElement('td');
                     const shipname_td = document.createElement('td');
+                    const shipmail_td = document.createElement('td');
 
                     shipname_td.innerHTML = shipname;
                     shipkey_td.innerHTML = shipkey;
+                    shipmail_td.innerHTML = shipsmail;
 
                     company_table.appendChild(shipkey_tr);
                     shipkey_tr.appendChild(shipname_td);
                     shipkey_tr.appendChild(shipkey_td);
+                    shipkey_tr.appendChild(shipmail_td);
 
                     console.log("Found ship:", response.data);
                 }
@@ -115,7 +123,7 @@
             const company_select = document.createElement('select');
             company_select.id = 'company_select'; 
 
-            const ship_company = ['ALL','CIDO', 'POLARIS', 'POSSM', 'FMLK', 'STX', 'DORIKO', 'TAIKOON', 'KSS', 'HANARO', 'KSM', 'WILHELMSEN', 'SNGLOBAL', 'MEGALINE', 'KORINSTAR', 'FAIR', 'SHINSUNG', 'BEOMJOO', 'JOONGANG', 'SINOKOR', 'LEESHIPPING', 'HANGANG', 'SEONGHO', 'PANBULK', 'WOCEAN', 'GFSM', 'PIL', 'SONGA', 'SK_SHIPPING','YOUHA_MARINE', 'ES_MARINE', 'HOS','TMS','GLOVIS'];
+            const ship_company = ['company','ALL','CIDO', 'POLARIS', 'POSSM', 'FMLK', 'STX', 'DORIKO', 'TAIKOON', 'KSS', 'HANARO', 'KSM', 'WILHELMSEN', 'SNGLOBAL', 'MEGALINE', 'KORINSTAR', 'FAIR', 'SHINSUNG', 'BEOMJOO', 'JOONGANG', 'SINOKOR', 'LEESHIPPING', 'HANGANG', 'SEONGHO', 'PANBULK', 'WOCEAN', 'GFSM', 'PIL', 'SONGA', 'SK_SHIPPING','YOUHA_MARINE', 'ES_MARINE', 'HOS','TMS','GLOVIS', 'KLCSM', 'HMM'];
 
             container.appendChild(company_select);
 
@@ -125,16 +133,19 @@
                 company_options.value = ship_company[i];
                 company_select.appendChild(company_options);
             }
-
+            
             ship_select();
-        });
-
-        function ship_select() {
-            const ship_company_select_event = document.getElementById('company_select');
-            ship_company_select_event.addEventListener('change', (e) => {
-                const ship_company_value = e.target.value;
+            });
+            
+            function ship_select() {
+                const ship_company_select_event = document.getElementById('company_select');
+                ship_company_select_event.addEventListener('change', (e) => {
+                    const ship_company_value = e.target.value;
+                    const company_table = document.getElementById('company_table')
+                    company_table.innerHTML = ''
                 const search_table = document.getElementById('search_table');
                 search_table.innerHTML = '';
+                
 
                 if (ship_company_value === 'ALL') {
                     axios.post('/send_all_ships')
@@ -148,6 +159,7 @@
                                     const shipkey_tr = document.createElement('tr');
                                     const shipkey_td = document.createElement('td');
                                     const shipname_td = document.createElement('td');
+                                    const email_td = document.createElement('td')
                                     const companyname = document.createElement('td');
                                     const dailyreport_download_button_2023 = document.createElement('button');
                                     dailyreport_download_button_2023.id = 'dailyreport_button';
@@ -180,6 +192,7 @@
 
                                     shipname_td.innerHTML = ships[company][i].SHIPNAME;
                                     shipkey_td.innerHTML = ships[company][i].SHIPKEY;
+                                    email_td.innerHTML = ships[company][i].EMAIL
                                     dailyreport_download_button_2023.innerHTML = `daily_2023`;
                                     dailyreport_download_button_2023.value = ships[company][i].SHIPKEY;
                                     dailyreport_download_button_2024.innerHTML = `daily_2024`;
@@ -191,8 +204,9 @@
 
                                     shipkey_tr.appendChild(shipname_td);
                                     shipkey_tr.appendChild(shipkey_td);
-                                    shipname_td.appendChild(bdn_download_button_2023);
-                                    shipname_td.appendChild(bdn_download_button_2024);
+                                    shipkey_tr.appendChild(email_td);
+                                    // shipname_td.appendChild(bdn_download_button_2023);
+                                    // shipname_td.appendChild(bdn_download_button_2024);
 
                                     company_table.appendChild(shipkey_tr);
                                 }
@@ -211,13 +225,16 @@
                                 const shipkey_tr = document.createElement('tr');
                                 const shipkey_td = document.createElement('td');
                                 const shipname_td = document.createElement('td');
+                                const shipmail_td = document.createElement('td');
 
                                 shipkey_td.innerHTML = ships[i].SHIPNAME;
                                 shipname_td.innerHTML = ships[i].SHIPKEY;
+                                shipmail_td.innerHTML = ships[i].EMAIL;
 
                                 company_table.appendChild(shipkey_tr);
                                 shipkey_tr.appendChild(shipkey_td);
                                 shipkey_tr.appendChild(shipname_td);
+                                shipkey_tr.appendChild(shipmail_td);
                             }
                         })
                         .catch((error) => {

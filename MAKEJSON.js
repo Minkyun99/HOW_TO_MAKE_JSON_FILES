@@ -103,6 +103,12 @@ const SK_SHIPPING_shipkey = ['3FQD4', 'SKTEST1']
 const TMS_shipname = ['GNS HARVEST', 'GNS HARMONY', 'GNS HOPE']
 const TMS_shipkey = ['3ELB7', 'V7QK7', 'D8BK']
 
+const KLCSM_shipname = ['ADONIS', 'GLOBAL BRAVE', 'GLOBAL FRONTIER', 'GLOBAL GENESIS', 'GLOBAL HOPE', 'K.ACACIA', 'K.ASIAN BEAUTY', 'K.ASTER', 'K.DAPHNE', 'K.FREESIA', 'K.JASMINE', 'K.MUGUNGWHA', 'LAVENDER', 'ROSEMARY', 'SM CHALLENGER', 'SM DIAMOND', 'SM DONGHAE', 'SM DONGHAE 2', 'SM DRAGON', 'SM EAGLE', 'SM EMERALD', 'SM FALCON', 'SM GEMINI 1', 'SM GEMINI2', 'SM HARMONY1', 'SM HARMONY2', 'SM HEDLAND', 'SM JEJU LNG1', 'SM JEJU LNG2', 'SM LION', 'SM NAVIGATOR', 'SM NEWORLEANS', 'SM OSPREY', 'SM PUMA', 'SM ROBERTS BANK', 'SM SAMCHEONPO', 'SM SANTOS', 'SM SEAHAWK', 'SM TIGER', 'SM VENUS1', 'SM VENUS2', 'SM VISION', 'SM WHITE WHALE 1', 'SM WHITE WHALE 2', 'WHITE ROSE']
+const KLCSM_shipkey = ['3EGH4', '3FHX4', 'H3TS', '3FLO2', '3EZY7', '3FQY9', '3EUH5', '3FUB2', '3EZF9', 'H3DP', '3EPQ5', '3ETM6', '3FHG3', '3FBU8', 'V7TJ5', '3FIJ5', '3FLR8', '3FMR6', '3FJZ7', '3EMX3', '3EHZ7', 'H3MW', '3FYA6', '3FVP5', 'V7A2878', 'D7VO', 'V7BW6', '3FTI8', '3ESH2', '3EKG8', '3ESW6', 'V7A2392', '3ECA6', '3END5', 'V7A2565', 'V7A2310', 'V7A2689', '3FLV3', '3FEJ7', '3EQL8', '3EZX3', '3EJN6', '3FND8', '3FCV5', '3EEW7']
+
+const HMM_shipname=	['HMM PROMISE', 'HMM BLESSING']	
+const HMM_shipkey = ['V7VY7', 'V7JK6']
+
 function makejson_shipkey (shipnames, shipkeys) {
     return shipnames.map((name, index) => ({
       SHIPNAME: name,
@@ -146,7 +152,9 @@ function makejson_shipkey (shipnames, shipkeys) {
     PIL : makejson_shipkey (PIL_shipname,PIL_shipkey),
     HOS : makejson_shipkey (HOS_shipname,HOS_shipkey),
     ES_MARITIME : makejson_shipkey (EsMaritime_shipname,EsMaritime_shipkey),
-    YOUHA_MARINE : makejson_shipkey (YOUHAMARINE_shipname,YOUHAMARINE_shipkey)
+    YOUHA_MARINE : makejson_shipkey (YOUHAMARINE_shipname,YOUHAMARINE_shipkey),
+    KLCSM : makejson_shipkey (KLCSM_shipname,KLCSM_shipkey),
+    HMM : makejson_shipkey (HMM_shipname,HMM_shipkey),
   };
 
 
