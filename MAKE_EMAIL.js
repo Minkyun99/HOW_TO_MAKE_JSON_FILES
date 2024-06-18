@@ -7,7 +7,7 @@ const GFSM_shipname =	['THAI CHEMI', 'ONSAN CHEMI', 'DAESAN CHEMI', 'BANGKOK CHE
 const GFSM_email = ['thaichemi@sea-one.com', 'onsanchemi@sea-one.com', 'daesanchemi@arionmail.com', 'bangkokchemi@sea-one.com']
 
 const GLOVIS_shipname =	['GLOVIS CARDINAL', 'GLOVIS COMPANION', 'GLOVIS SILVER', 'GLOVIS SONIC', 'VL BREEZE', 'GLOVIS SUNLIGHT', 'GLOVIS SUNRISE']	
-const GLOVIS_email = ['g_cardinal@glovis.sea-one.com', '?g_companion@glovis.sea-one.com', 'g_silver@glovis.sea-one.com?', '?g_sonic@glovis.sea-one.com', 'vl_breeze@glovis.sea-one.com', '?g_sunlight@glovis.sea-one.com', '']
+const GLOVIS_email = ['g_cardinal@glovis.sea-one.com', 'g_companion@glovis.sea-one.com', 'g_silver@glovis.sea-one.com?', 'g_sonic@glovis.sea-one.com', 'vl_breeze@glovis.sea-one.com', 'g_sunlight@glovis.sea-one.com', '']
 
 const HMM_shipname=	['HMM PROMISE', 'HMM BLESSING']	
 const HMM_email = ['hpromise@hmms.co.kr', 'hblessing@hmms.co.kr']
